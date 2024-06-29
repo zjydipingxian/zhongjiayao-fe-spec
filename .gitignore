@@ -1,2 +1,5 @@
 node_modules/
-.vitepress/
+dist
+cache
+.temp
+.DS_Store
