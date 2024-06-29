@@ -1,0 +1,46 @@
+{
+  "author": "ZhongJiaYao",
+  "name": "zhongjiayao-fe-spec",
+  "description": "ZhongJiaYao--前端编码规范工程化(简单版)",
+  "version": "0.0.1",
+  "private": false,
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky install",
+    "init": "pnpm install",
+    "clean": "lerna clean && rm -rf node_modules",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "commit": "git-cz",
+    "commitlint": "commitlint --edit"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-git"
+    }
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "keywords": [
+    "前端编码规范工程化(简单版)",
+    "fe spec"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "conventional-changelog-cli": "^5.0.0",
+    "conventional-changelog-conventionalcommits": "^7.0.0",
+    "cspell": "^8.9.1",
+    "cz-git": "^1.9.3",
+    "husky": "^8.0.3",
+    "lerna": "^8.1.2",
+    "markdownlint": "^0.34.0",
+    "vitepress": "^1.2.3"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

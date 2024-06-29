@@ -1,0 +1,27 @@
+{
+  "name": "@zhongjiayao/markdownlint-config",
+  "version": "1.0.1",
+  "description": "> markdownlint: 文档规范",
+  "author": "'Null' <'7566349+zhongjiayao@user.noreply.gitee.com'>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/markdownlint-config.json",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "encode",
+    "markdown",
+    "lint"
+  ],
+  "scripts": {
+    "test": "node ./__tests__/markdownlint-config.test.js"
+  },
+  "dependencies": {
+    "markdownlint": "^0.34.0"
+  }
+}
