@@ -30,6 +30,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
+    "commitizen": "^4.3.0",
     "conventional-changelog-cli": "^5.0.0",
     "conventional-changelog-conventionalcommits": "^7.0.0",
     "cspell": "^8.9.1",
