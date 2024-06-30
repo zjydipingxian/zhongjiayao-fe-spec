@@ -25,7 +25,7 @@ module.exports = {
     // 禁止覆盖相关长手属性的速记属性
     'declaration-block-no-shorthand-property-overrides': true,
     //  不允许在字体系列中使用重复名称
-    'font-family-no-duplicate-name': true,
+    'font-family-no-duplicate-names': true,
     // 禁止在函数中 calc 禁用无效的无间隔运算符（可自动修复）
     'function-calc-no-unspaced-operator': true,
     // 禁止在关键帧声明中无效 !important 。
