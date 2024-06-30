@@ -19,40 +19,19 @@ export default defineConfig({
         ],
       },
       {
-        text: '编码规范',
-        items: [
-          {
-            text: 'HTML 编码规范',
-            link: '/coding/html',
-          },
-          {
-            text: 'CSS 编码规范',
-            link: '/coding/css',
-          },
-          {
-            text: 'JavaScript 编码规范',
-            link: '/coding/javascript',
-          },
-          {
-            text: 'Node 编码规范',
-            link: '/coding/node',
-          },
-          {
-            text: 'Typescript 编码规范',
-            link: '/coding/typescript',
-          },
-        ],
-      },
-      {
         text: 'NPM包',
         items: [
           {
-            text: 'commitlint-config-encode',
+            text: 'commitlint-config',
             link: '/npm/commitlint-config',
           },
           {
-            text: 'markdownlint-config-encode',
+            text: 'markdownlint-config',
             link: '/npm/markdownlint-config',
+          },
+          {
+            text: 'stylelint-config',
+            link: '/npm/stylelint-config',
           },
         ],
       },
@@ -74,13 +53,27 @@ export default defineConfig({
             text: 'JavaScript 编码规范',
             link: '/coding/javascript',
           },
+          // {
+          //   text: 'Typescript 编码规范',
+          //   link: '/coding/typescript',
+          // },
+        ],
+      },
+
+      {
+        text: 'NPM包',
+        items: [
           {
-            text: 'Node 编码规范',
-            link: '/coding/node',
+            text: 'commitlint-config',
+            link: '/npm/commitlint-config',
           },
           {
-            text: 'Typescript 编码规范',
-            link: '/coding/typescript',
+            text: 'markdownlint-config',
+            link: '/npm/markdownlint-config',
+          },
+          {
+            text: 'stylelint-config',
+            link: '/npm/stylelint-config',
           },
         ],
       },
@@ -98,19 +91,6 @@ export default defineConfig({
           {
             text: 'CHANGELOG 规范',
             link: '/engineering/changelog',
-          },
-        ],
-      },
-      {
-        text: 'NPM包',
-        items: [
-          {
-            text: 'commitlint-config-encode',
-            link: '/npm/commitlint-config',
-          },
-          {
-            text: 'markdownlint-config-encode',
-            link: '/npm/markdownlint-config',
           },
         ],
       },
