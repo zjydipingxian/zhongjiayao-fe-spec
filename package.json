@@ -9,6 +9,7 @@
     "prepare": "husky install",
     "init": "pnpm install",
     "clean": "lerna clean && rm -rf node_modules",
+    "test": "lerna run test",
     "docs:dev": "vitepress dev docs",
     "build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
@@ -36,7 +37,7 @@
     "cspell": "^8.9.1",
     "cz-git": "^1.9.3",
     "husky": "^8.0.3",
-    "lerna": "^8.1.2",
+    "lerna": "^7.2.0",
     "markdownlint": "^0.34.0",
     "vitepress": "^1.2.3"
   },
