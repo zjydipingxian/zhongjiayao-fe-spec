@@ -2,7 +2,7 @@
   "author": "ZhongJiaYao",
   "name": "zhongjiayao-fe-spec",
   "description": "ZhongJiaYao--前端编码规范工程化(简单版)",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
@@ -33,7 +33,7 @@
     "@commitlint/config-conventional": "^19.2.2",
     "commitizen": "^4.3.0",
     "conventional-changelog-cli": "^5.0.0",
-    "conventional-changelog-conventionalcommits": "^7.0.0",
+    "conventional-changelog-conventionalcommits": "^7.0.2",
     "cspell": "^8.9.1",
     "cz-git": "^1.9.3",
     "husky": "^8.0.3",

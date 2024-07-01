@@ -37,7 +37,7 @@ jobs:
     # node v20 运行
     strategy:
       matrix:
-        node-version: [18.19.0]
+        node-version: [20]
 
     steps:
       # 拉取代码
@@ -64,7 +64,7 @@ jobs:
 
         # 安装依赖
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
         # 构建项目
       - name: Build blog project
