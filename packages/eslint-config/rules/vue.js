@@ -79,7 +79,7 @@ module.exports = {
     'vue/require-component-is': 'warn',
 
     // render 函数必须有返回值
-    'vue/require-render-return': 'error',
+    'vue/require-render-return': 'warn',
 
     // 计算属性必须有返回值
     'vue/return-in-computed-property': 'error',

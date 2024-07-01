@@ -1,7 +1,7 @@
 {
-  "name": "@zhongjiayao/commitlint-config",
-  "version": "1.0.9",
-  "description": "markdownlint-config 规范",
+  "name": "@zhongjiayao/commitlint-config-encode",
+  "version": "1.1.0",
+  "description": "markdownlint-config-encode 规范",
   "author": "'Null' <'7566349+zhongjiayao@user.noreply.gitee.com'>",
   "homepage": "",
   "license": "ISC",

@@ -3,7 +3,7 @@
   "name": "zhongjiayao-fe-spec",
   "description": "ZhongJiaYao--前端编码规范工程化(简单版)",
   "version": "1.0.0",
-  "private": false,
+  "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
