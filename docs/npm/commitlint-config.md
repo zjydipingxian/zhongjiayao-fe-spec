@@ -1,12 +1,12 @@
 ---
-title: '@zhongjiayao/commitlint-config'
+title: '@zhongjiayao/commitlint-config-encode'
 tags:
   - 编码规范
 author:
   name: ZhongJiaYao
 ---
 
-# @zhongjiayao/commitlint-config
+# @zhongjiayao/commitlint-config-encode
 
 > Git 提交规范
 
@@ -19,11 +19,11 @@ author:
 :::code-group
 
 ```sh [安装 PNPM]
-pnpm install @zhongjiayao/commitlint-config @commitlint/cli --save-dev
+pnpm install @zhongjiayao/commitlint-config-encode @commitlint/cli --save-dev
 ```
 
 ```sh [安装 npm]
-npm install @zhongjiayao/commitlint-config @commitlint/cli --save-dev
+npm install @zhongjiayao/commitlint-config-encode @commitlint/cli --save-dev
 ```
 
 :::
@@ -34,7 +34,7 @@ npm install @zhongjiayao/commitlint-config @commitlint/cli --save-dev
 
 ```javascript
 module.exports = {
-  extends: ['@zhongjiayao/commitlint-config'],
+  extends: ['@zhongjiayao/commitlint-config-encode'],
 }
 ```
 
@@ -91,7 +91,7 @@ npm install --save-dev @commitlint/cz-commitlint commitizen
   "scripts": {
     "commit": "git-cz"
   },
-  // 理论上这个可以不写， 以及集成在 @zhongjiayao/commitlint-config
+  // 理论上这个可以不写， 以及集成在 @zhongjiayao/commitlint-config-encode
   "config": {
     "commitizen": {
       "path": "cz-git"

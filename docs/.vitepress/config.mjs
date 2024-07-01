@@ -22,16 +22,16 @@ export default defineConfig({
         text: 'NPM包',
         items: [
           {
-            text: 'commitlint-config',
-            link: '/npm/commitlint-config',
+            text: 'commitlint-config-encode',
+            link: '/npm/commitlint-config-encode',
           },
           {
-            text: 'markdownlint-config',
-            link: '/npm/markdownlint-config',
+            text: 'markdownlint-config-encode',
+            link: '/npm/markdownlint-config-encode',
           },
           {
-            text: 'stylelint-config',
-            link: '/npm/stylelint-config',
+            text: 'stylelint-config-encode',
+            link: '/npm/stylelint-config-encode',
           },
         ],
       },

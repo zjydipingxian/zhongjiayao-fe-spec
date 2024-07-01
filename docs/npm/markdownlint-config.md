@@ -1,5 +1,5 @@
 ---
-title: '@zhongjiayao/markdownlint-config'
+title: '@zhongjiayao/markdownlint-config-encode'
 tags:
   - markdownlint 编码规范
 author:
@@ -17,11 +17,11 @@ author:
 :::code-group
 
 ```sh [安装 PNPM]
-pnpm install @zhongjiayao/commitlint-config @commitlint/cli --save-dev
+pnpm install @zhongjiayao/commitlint-config-encode @commitlint/cli --save-dev
 ```
 
 ```sh [安装 NPM]
-npm install @zhongjiayao/commitlint-config @commitlint/cli --save-dev
+npm install @zhongjiayao/commitlint-config-encode @commitlint/cli --save-dev
 ```
 
 :::

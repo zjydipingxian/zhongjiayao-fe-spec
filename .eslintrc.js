@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    './packages/eslint-config/lib/eslint-config.js',
-    './packages/eslint-config/vue.js',
+    './packages/eslint-config-encode/lib/eslint-config.js',
+    './packages/eslint-config-encode/vue.js',
   ],
 }

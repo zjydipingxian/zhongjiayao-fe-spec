@@ -1,12 +1,12 @@
 ---
-title: '@zhongjiayao/stylelint-config'
+title: '@zhongjiayao/stylelint-config-encode'
 tags:
   - stylelint 编码规范
 author:
   name: ZhongJiaYao
 ---
 
-# @zhongjiayao/stylelint-config
+# @zhongjiayao/stylelint-config-encode
 
 支持配套的 [stylelint 可共享配置](https://stylelint.io/user-guide/configure)。
 
@@ -22,11 +22,11 @@ author:
 :::code-group
 
 ```sh [安装 PNPM]
-pnpm install @zhongjiayao/stylelint-config  stylelint stylelint-scss stylelint-config-standard stylelint-config-prettier --save-dev
+pnpm install @zhongjiayao/stylelint-config-encode  stylelint stylelint-scss stylelint-config-standard stylelint-config-prettier --save-dev
 ```
 
 ```sh [安装 npm]
-npm install @zhongjiayao/stylelint-config  stylelint stylelint-scss stylelint-config-standard stylelint-config-prettier --save-dev
+npm install @zhongjiayao/stylelint-config-encode  stylelint stylelint-scss stylelint-config-standard stylelint-config-prettier --save-dev
 ```
 
 :::
@@ -49,7 +49,7 @@ npm install @zhongjiayao/stylelint-config  stylelint stylelint-scss stylelint-co
 module.exports = {
   extends: [
     'stylelint-config-recommended-vue/scss',
-    '@zhongjiayao/stylelint-config',
+    '@zhongjiayao/stylelint-config-encode',
   ],
 
   ...
