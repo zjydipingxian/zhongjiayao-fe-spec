@@ -1,0 +1,40 @@
+{
+  "name": "@zhongjiayao/eslint-config",
+  "version": "1.0.0",
+  "description": "JavaScript TypeScript Node 规范",
+  "keywords": [
+    "encode",
+    "javaScript",
+    "typescript",
+    "lint"
+  ],
+  "author": "'Null' <'7566349+zhongjiayao@user.noreply.gitee.com'>",
+  "homepage": "https://github.com/zjydipingxian/zhongjiayao-fe-spec#readme",
+  "license": "ISC",
+  "main": "lib/eslint-config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zjydipingxian/zhongjiayao-fe-spec.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/eslint-config.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/zjydipingxian/zhongjiayao-fe-spec/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/eslint-parser": "^7.24.7",
+    "eslint": "8.57.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-vue": "^9.26.0",
+    "vue-eslint-parser": "^9.4.3"
+  }
+}
