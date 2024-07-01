@@ -120,6 +120,7 @@ module.exports = {
     // 使用有效的 JSDoc 注释
     'valid-jsdoc': 'off',
 
+    // eslint-disable-next-line max-len
     // 同 typeof 表达式结果进行比较的值必须是有效的字符串，即 'undefined', 'object', 'boolean', 'number', 'string', 'function' 或 'symbol'
     'valid-typeof': ['error', { requireStringLiterals: true }],
   },
