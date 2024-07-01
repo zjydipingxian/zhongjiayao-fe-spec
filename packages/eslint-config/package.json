@@ -1,6 +1,6 @@
 {
   "name": "@zhongjiayao/eslint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JavaScript TypeScript Node 规范",
   "keywords": [
     "encode",
@@ -16,9 +16,6 @@
     "lib": "lib",
     "test": "__tests__"
   },
-  "files": [
-    "lib"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zjydipingxian/zhongjiayao-fe-spec.git"
