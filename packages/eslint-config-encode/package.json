@@ -1,6 +1,6 @@
 {
   "name": "@zhongjiayao/eslint-config-encode",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "JavaScript TypeScript Node 规范",
   "keywords": [
     "encode",
