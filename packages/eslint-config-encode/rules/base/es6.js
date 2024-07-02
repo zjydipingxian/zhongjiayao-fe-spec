@@ -33,7 +33,7 @@ module.exports = {
     'no-confusing-arrow': 'error',
 
     // 禁止修改 const 声明的变量
-    'no-const-assign': 'error',
+    'no-const-assign': 'off',
 
     // 避免重复的类成员命名
     'no-dupe-class-members': 'error',

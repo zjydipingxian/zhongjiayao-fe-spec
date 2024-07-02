@@ -4,6 +4,7 @@ Byelide
 commitlint
 commitlintrc
 conventionalcommits
+copyfiles
 optimizelegibility
 pinia
 preinstall
