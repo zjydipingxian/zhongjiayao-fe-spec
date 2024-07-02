@@ -23,15 +23,15 @@ export default defineConfig({
         items: [
           {
             text: 'commitlint-config-encode',
-            link: '/npm/commitlint-config-encode',
+            link: '/npm/commitlint-config',
           },
           {
             text: 'markdownlint-config-encode',
-            link: '/npm/markdownlint-config-encode',
+            link: '/npm/markdownlint-config',
           },
           {
             text: 'stylelint-config-encode',
-            link: '/npm/stylelint-config-encode',
+            link: '/npm/stylelint-config',
           },
         ],
       },
