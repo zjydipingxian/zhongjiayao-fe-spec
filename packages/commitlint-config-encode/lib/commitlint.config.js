@@ -2,10 +2,10 @@ module.exports = {
   parserPreset: 'cz-git',
   rules: {
     'body-leading-blank': [1, 'always'],
-    'body-max-line-length': [2, 'always', 100],
+    'body-max-line-length': [2, 'always', 120],
     'footer-leading-blank': [1, 'always'],
-    'footer-max-line-length': [2, 'always', 100],
-    'header-max-length': [2, 'always', 100],
+    'footer-max-line-length': [2, 'always', 120],
+    'header-max-length': [2, 'always', 120],
     'scope-case': [2, 'always', 'lower-case'],
     'subject-case': [0],
     'subject-empty': [2, 'never'],
