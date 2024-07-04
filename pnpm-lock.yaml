@@ -88,8 +88,8 @@ importers:
         specifier: ^1.0.2
         version: 1.0.2
       '@zhongjiayao/stylelint-config-encode':
-        specifier: ^1.0.2
-        version: 1.0.2
+        specifier: ^1.0.3
+        version: 1.0.3
       chalk:
         specifier: ^4.1.0
         version: 4.1.2
@@ -144,21 +144,45 @@ importers:
       ora:
         specifier: ^5.1.0
         version: 5.1.0
+      postcss:
+        specifier: 8.4.38
+        version: 8.4.38
+      postcss-html:
+        specifier: ^1.7.0
+        version: 1.7.0
+      postcss-scss:
+        specifier: ^4.0.9
+        version: 4.0.9(postcss@8.4.38)
       prettier:
         specifier: ^3.3.2
         version: 3.3.2
       stylelint:
         specifier: ^15.11.0
         version: 15.11.0(typescript@5.5.3)
+      stylelint-config-html:
+        specifier: ^1.1.0
+        version: 1.1.0(postcss-html@1.7.0)(stylelint@15.11.0(typescript@5.5.3))
       stylelint-config-prettier:
-        specifier: ^9.0.5
-        version: 9.0.5(stylelint@15.11.0(typescript@5.5.3))
+        specifier: ^8.0.2
+        version: 8.0.2(stylelint@15.11.0(typescript@5.5.3))
+      stylelint-config-recommended-scss:
+        specifier: ^9.0.1
+        version: 9.0.1(postcss@8.4.38)(stylelint@15.11.0(typescript@5.5.3))
+      stylelint-config-recommended-vue:
+        specifier: ^1.5.0
+        version: 1.5.0(postcss-html@1.7.0)(stylelint@15.11.0(typescript@5.5.3))
       stylelint-config-standard:
-        specifier: ^36.0.1
-        version: 36.0.1(stylelint@15.11.0(typescript@5.5.3))
+        specifier: ^32.0.0
+        version: 32.0.0(stylelint@15.11.0(typescript@5.5.3))
       stylelint-config-standard-scss:
-        specifier: ^13.1.0
-        version: 13.1.0(postcss@8.4.39)(stylelint@15.11.0(typescript@5.5.3))
+        specifier: ^12.0.0
+        version: 12.0.0(postcss@8.4.38)(stylelint@15.11.0(typescript@5.5.3))
+      stylelint-config-standard-vue:
+        specifier: 1.0.0
+        version: 1.0.0(postcss-html@1.7.0)(stylelint@15.11.0(typescript@5.5.3))
+      stylelint-config-vue:
+        specifier: ^1.0.0
+        version: 1.0.0(prettier@3.3.2)(stylelint@15.11.0(typescript@5.5.3))
       stylelint-order:
         specifier: ^6.0.4
         version: 6.0.4(stylelint@15.11.0(typescript@5.5.3))
@@ -1831,8 +1855,8 @@ packages:
   '@zhongjiayao/markdownlint-config-encode@1.0.2':
     resolution: {integrity: sha512-rqUjXaegRbSovmHGvWzP37cSDDGZRVxUNnx0xYeTI2Z6d6n+ZBS43Zzvk6hxrC/kvo6phjDlmqLwfnO5wq/71g==}
 
-  '@zhongjiayao/stylelint-config-encode@1.0.2':
-    resolution: {integrity: sha512-RbixvnxOtNKzFZzeG4uIMMRLCgRsOZLxK/IUw+8Y75nB/ENheHnjIg5c6SNWh2S16KNY4aNfhko+R8febDbUug==}
+  '@zhongjiayao/stylelint-config-encode@1.0.3':
+    resolution: {integrity: sha512-ozehETWd22BclEc8Eb2hMYpngOQ7kLG1/6FX2W/v9KHTh464E5L8DoEIRu7Partf8bmDMvQKBo1HXDe/+FnYRA==}
 
   '@zkochan/js-yaml@0.0.6':
     resolution: {integrity: sha512-nzvgl3VfhcELQ8LyVrYOru+UtAy1nrygk2+AGbTm8a5YcO6o8lSjAT+pfg3vJWxIoZKOUhrK6UU7xW/+00kQrg==}
@@ -5225,13 +5249,6 @@ packages:
     peerDependencies:
       stylelint: '>=11.0.0'
 
-  stylelint-config-prettier@9.0.5:
-    resolution: {integrity: sha512-U44lELgLZhbAD/xy/vncZ2Pq8sh2TnpiPvo38Ifg9+zeioR+LAkHu0i6YORIOxFafZoVg0xqQwex6e6F25S5XA==}
-    engines: {node: '>= 12'}
-    hasBin: true
-    peerDependencies:
-      stylelint: '>= 11.x < 15'
-
   stylelint-config-recommended-scss@14.0.0:
     resolution: {integrity: sha512-HDvpoOAQ1RpF+sPbDOT2Q2/YrBDEJDnUymmVmZ7mMCeNiFSdhRdyGEimBkz06wsN+HaFwUh249gDR+I9JR7Onw==}
     engines: {node: '>=18.12.0'}
@@ -5289,16 +5306,6 @@ packages:
       postcss:
         optional: true
 
-  stylelint-config-standard-scss@13.1.0:
-    resolution: {integrity: sha512-Eo5w7/XvwGHWkeGLtdm2FZLOMYoZl1omP2/jgFCXyl2x5yNz7/8vv4Tj6slHvMSSUNTaGoam/GAZ0ZhukvalfA==}
-    engines: {node: '>=18.12.0'}
-    peerDependencies:
-      postcss: ^8.3.3
-      stylelint: ^16.3.1
-    peerDependenciesMeta:
-      postcss:
-        optional: true
-
   stylelint-config-standard-vue@1.0.0:
     resolution: {integrity: sha512-wAzU7p6DSlo04pWfCbOcaMq09Nojt0FEsbdxhCBTdC7IguD9ZVl7FP/bvyA0HAHjZGC4JkW7m6WiQaoVMDSuFw==}
     engines: {node: ^12 || >=14}
@@ -5321,12 +5328,6 @@ packages:
     engines: {node: '>=18.12.0'}
     peerDependencies:
       stylelint: ^16.0.0
-
-  stylelint-config-standard@36.0.1:
-    resolution: {integrity: sha512-8aX8mTzJ6cuO8mmD5yon61CWuIM4UD8Q5aBcWKGSf6kg+EC3uhB+iOywpTK4ca6ZL7B49en8yanOFtUW0qNzyw==}
-    engines: {node: '>=18.12.0'}
-    peerDependencies:
-      stylelint: ^16.1.0
 
   stylelint-config-vue@1.0.0:
     resolution: {integrity: sha512-SBiEwBZeWw+TuhIAjLBdoFSEzftsMIt74V/qSYXmnJjATxNkjB8AkfMcftT+rfANvnNOsVuwIUxxF5Cm03A0tg==}
@@ -7727,7 +7728,7 @@ snapshots:
     dependencies:
       markdownlint: 0.34.0
 
-  '@zhongjiayao/stylelint-config-encode@1.0.2': {}
+  '@zhongjiayao/stylelint-config-encode@1.0.3': {}
 
   '@zkochan/js-yaml@0.0.6':
     dependencies:
@@ -11364,17 +11365,9 @@ snapshots:
     dependencies:
       postcss: 8.4.38
 
-  postcss-safe-parser@6.0.0(postcss@8.4.39):
-    dependencies:
-      postcss: 8.4.39
-
   postcss-scss@4.0.9(postcss@8.4.38):
     dependencies:
       postcss: 8.4.38
-
-  postcss-scss@4.0.9(postcss@8.4.39):
-    dependencies:
-      postcss: 8.4.39
 
   postcss-selector-parser@6.1.0:
     dependencies:
@@ -11386,9 +11379,9 @@ snapshots:
       lodash: 4.17.21
       postcss: 7.0.39
 
-  postcss-sorting@8.0.2(postcss@8.4.39):
+  postcss-sorting@8.0.2(postcss@8.4.38):
     dependencies:
-      postcss: 8.4.39
+      postcss: 8.4.38
 
   postcss-value-parser@4.2.0: {}
 
@@ -11408,6 +11401,7 @@ snapshots:
       nanoid: 3.3.7
       picocolors: 1.0.1
       source-map-js: 1.2.0
+    optional: true
 
   preact@10.22.1: {}
 
@@ -11938,10 +11932,6 @@ snapshots:
     dependencies:
       stylelint: 15.11.0(typescript@5.5.3)
 
-  stylelint-config-prettier@9.0.5(stylelint@15.11.0(typescript@5.5.3)):
-    dependencies:
-      stylelint: 15.11.0(typescript@5.5.3)
-
   stylelint-config-recommended-scss@14.0.0(postcss@8.4.38)(stylelint@15.11.0(typescript@5.5.3)):
     dependencies:
       postcss-scss: 4.0.9(postcss@8.4.38)
@@ -11950,15 +11940,6 @@ snapshots:
       stylelint-scss: 6.3.2(stylelint@15.11.0(typescript@5.5.3))
     optionalDependencies:
       postcss: 8.4.38
-
-  stylelint-config-recommended-scss@14.0.0(postcss@8.4.39)(stylelint@15.11.0(typescript@5.5.3)):
-    dependencies:
-      postcss-scss: 4.0.9(postcss@8.4.39)
-      stylelint: 15.11.0(typescript@5.5.3)
-      stylelint-config-recommended: 14.0.1(stylelint@15.11.0(typescript@5.5.3))
-      stylelint-scss: 6.3.2(stylelint@15.11.0(typescript@5.5.3))
-    optionalDependencies:
-      postcss: 8.4.39
 
   stylelint-config-recommended-scss@9.0.1(postcss@8.4.38)(stylelint@15.11.0(typescript@5.5.3)):
     dependencies:
@@ -12001,14 +11982,6 @@ snapshots:
     optionalDependencies:
       postcss: 8.4.38
 
-  stylelint-config-standard-scss@13.1.0(postcss@8.4.39)(stylelint@15.11.0(typescript@5.5.3)):
-    dependencies:
-      stylelint: 15.11.0(typescript@5.5.3)
-      stylelint-config-recommended-scss: 14.0.0(postcss@8.4.39)(stylelint@15.11.0(typescript@5.5.3))
-      stylelint-config-standard: 36.0.1(stylelint@15.11.0(typescript@5.5.3))
-    optionalDependencies:
-      postcss: 8.4.39
-
   stylelint-config-standard-vue@1.0.0(postcss-html@1.7.0)(stylelint@15.11.0(typescript@5.5.3)):
     dependencies:
       postcss-html: 1.7.0
@@ -12032,11 +12005,6 @@ snapshots:
       stylelint: 15.11.0(typescript@5.5.3)
       stylelint-config-recommended: 14.0.1(stylelint@15.11.0(typescript@5.5.3))
 
-  stylelint-config-standard@36.0.1(stylelint@15.11.0(typescript@5.5.3)):
-    dependencies:
-      stylelint: 15.11.0(typescript@5.5.3)
-      stylelint-config-recommended: 14.0.1(stylelint@15.11.0(typescript@5.5.3))
-
   stylelint-config-vue@1.0.0(prettier@3.3.2)(stylelint@15.11.0(typescript@5.5.3)):
     dependencies:
       stylelint-config-prettier: 6.0.0(stylelint@15.11.0(typescript@5.5.3))
@@ -12056,8 +12024,8 @@ snapshots:
 
   stylelint-order@6.0.4(stylelint@15.11.0(typescript@5.5.3)):
     dependencies:
-      postcss: 8.4.39
-      postcss-sorting: 8.0.2(postcss@8.4.39)
+      postcss: 8.4.38
+      postcss-sorting: 8.0.2(postcss@8.4.38)
       stylelint: 15.11.0(typescript@5.5.3)
 
   stylelint-prettier@1.2.0(prettier@3.3.2)(stylelint@15.11.0(typescript@5.5.3)):
@@ -12112,9 +12080,9 @@ snapshots:
       micromatch: 4.0.7
       normalize-path: 3.0.0
       picocolors: 1.0.1
-      postcss: 8.4.39
+      postcss: 8.4.38
       postcss-resolve-nested-selector: 0.1.1
-      postcss-safe-parser: 6.0.0(postcss@8.4.39)
+      postcss-safe-parser: 6.0.0(postcss@8.4.38)
       postcss-selector-parser: 6.1.0
       postcss-value-parser: 4.2.0
       resolve-from: 5.0.0
