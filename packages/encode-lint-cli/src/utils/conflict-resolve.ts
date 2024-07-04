@@ -59,7 +59,7 @@ const checkReWriteConfig = (cwd: string) => {
     .filter((filename: any) => fs.existsSync(path.resolve(cwd, filename)))
 }
 
-export default async (cwd: string, rewriteConfig?: boolean) => {
+export default async (cwd: string, rewriteConfig?: boolean) => { 
   const pkgPath = path.resolve(cwd, 'package.json')
   const pkg: PKG = fs.readJSONSync(pkgPath)
   const dependencies = [...Object.keys(pkg.dependencies || {}), ...Object.keys(pkg.devDependencies || [])]
