@@ -1,9 +1,8 @@
 import { execSync } from 'child_process'
 import ora from 'ora';  // 类似 一个 loading
 import npmType from '../utils/npm-type'
-import log from '../utils/log';
+import log from '../utils/log'
 import { PKG_NAME, PKG_VERSION } from '../utils/constants'
-
 /**
  * 检查最新版本号
  */

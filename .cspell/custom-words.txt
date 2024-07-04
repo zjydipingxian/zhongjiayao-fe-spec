@@ -5,11 +5,14 @@ commitlint
 commitlintrc
 conventionalcommits
 copyfiles
+lintrc
 optimizelegibility
 pinia
 preinstall
 rushstack
 stylelint
+stylelintignore
+stylelintrc
 tiptap
 tsbuildinfo
 tsno
