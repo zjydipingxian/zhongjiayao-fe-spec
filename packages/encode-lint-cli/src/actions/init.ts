@@ -84,7 +84,12 @@ export default async (options: InitOptions) => {
   const config: Record<string, any> = {}
   const pkgPath = path.resolve(cwd, 'package.json')
 
+  console.log('dddddddddd', pkgPath)
+
   let pkg: PKG = fs.readJSONSync(pkgPath)
+
+  console.log('pkgpkgpkg', pkg)
+
 
   // 版本检查
   if (!isTest && checkVersionUpdate) {

@@ -1,13 +1,30 @@
+/* eslint-env node */
 module.exports = {
   defaultSeverity: 'warning',
   extends: [
     'stylelint-config-standard', // 配置 stylelint 扩展插件
+    'stylelint-config-html/vue', // 配置 vue 中 template
     'stylelint-config-standard-scss', // 配置 stylelint scss
-    'stylelint-config-prettier', // 配置 stylelint 和 prettier 兼容  关闭所有不必要或可能与 Prettier 冲突的规则
+    'stylelint-config-recommended-vue/scss',
+    'stylelint-config-prettier', // 配置 stylelint 和 prettier 兼容
   ],
   plugins: ['stylelint-order'],
+
+  overrides: [
+    {
+      files: ['**/*.(scss|css|vue|html)'],
+      customSyntax: 'postcss-scss',
+    },
+    {
+      files: ['**/*.(html|vue)'],
+      customSyntax: 'postcss-html',
+    },
+  ],
+
   rules: {
-    //禁止未知的 at 规则。
+    // 不允许使用无效的十六进制颜色。
+    'color-no-invalid-hex': true,
+    // 禁止未知的 at 规则。
     'at-rule-no-unknown': null,
     // 不允许使用空块
     'block-no-empty': null,
@@ -18,7 +35,6 @@ module.exports = {
     'declaration-block-no-duplicate-properties': [
       true,
       {
-        // 允许不同的值
         ignore: ['consecutive-duplicates-with-different-values'],
       },
     ],
@@ -46,6 +62,7 @@ module.exports = {
         ignorePseudoClasses: ['global', 'v-deep', 'deep'],
       },
     ],
+    'order/order': ['custom-properties', 'declarations'],
 
     // 指定样式的排序
     'order/properties-order': [
@@ -122,14 +139,5 @@ module.exports = {
       'transition',
     ],
   },
-  // 配置不需要 Stylelint 检查的文件类型
-  ignoreFiles: [
-    '**/*.js',
-    '**/*.jsx',
-    '**/*.tsx',
-    '**/*.ts',
-    '**/*.json',
-    '**/*.md',
-    '**/*.yaml',
-  ],
+  ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
 }

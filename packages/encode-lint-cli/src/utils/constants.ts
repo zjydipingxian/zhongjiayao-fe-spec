@@ -71,7 +71,13 @@ export const ESLINT_IGNORE_PATTERN: string[] = [
 /**
  * stylelint 扫描文件扩展名
  */
-export const STYLELINT_FILE_EXT: string[] = ['.css', '.scss', '.less', '.acss']
+export const STYLELINT_FILE_EXT: string[] = [
+  '.css',
+  '.scss',
+  '.less',
+  '.acss',
+  'vue',
+]
 
 /**
  * stylelint 扫描忽略的文件或文件目录
