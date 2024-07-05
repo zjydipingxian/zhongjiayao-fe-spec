@@ -47,6 +47,11 @@ jobs:
           # 保留 Git 信息
           fetch-depth: 0
 
+      - name: Clear npm and pnpm cache
+        run: |
+          npm cache clean --force
+          pnpm cache clean
+
       # 设置使用 Node.js 版本
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
@@ -58,7 +63,7 @@ jobs:
       - uses: pnpm/action-setup@v2
         name: Install pnpm
         with:
-          version: latest
+          version: 6.24.3
           # version: 9
           run_install: false
 
