@@ -37,7 +37,7 @@ jobs:
     # node v20 运行
     strategy:
       matrix:
-        node-version: [18.19.0]
+        node-version: [20]
 
     steps:
       # 拉取代码
@@ -60,7 +60,7 @@ jobs:
         with:
           version: latest
           # version: 9
-          run_install: false
+          run_install: true
 
         # 安装依赖
       - name: Install dependencies
