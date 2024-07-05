@@ -37,7 +37,7 @@ jobs:
     # node v20 运行
     strategy:
       matrix:
-        node-version: [20]
+        node-version: [18.19.0]
 
     steps:
       # 拉取代码
@@ -47,26 +47,18 @@ jobs:
           # 保留 Git 信息
           fetch-depth: 0
 
-      - name: Clear npm and pnpm cache
-        run: |
-          pnpm cache clean
-
       # 设置使用 Node.js 版本
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Clear npm and pnpm cache
-        run: |
-          pnpm cache clean
-
       # 使用 最新的 PNPM
       # 你也可以指定为具体的版本
       - uses: pnpm/action-setup@v2
         name: Install pnpm
         with:
-          version: 6.24.3
+          version: latest
           # version: 9
           run_install: false
 
