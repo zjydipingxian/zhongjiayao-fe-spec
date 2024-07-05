@@ -120,6 +120,9 @@ importers:
       eslint-plugin-vue:
         specifier: ^9.26.0
         version: 9.26.0(eslint@8.57.0)
+      execa:
+        specifier: ^5.0.0
+        version: 5.1.1
       fast-glob:
         specifier: ^3.3.2
         version: 3.3.2
@@ -132,6 +135,9 @@ importers:
       husky:
         specifier: 8.0.3
         version: 8.0.3
+      is-docker:
+        specifier: ^2.1.1
+        version: 2.2.1
       lodash:
         specifier: ^4.14.2
         version: 4.17.21
@@ -156,6 +162,9 @@ importers:
       prettier:
         specifier: ^3.3.2
         version: 3.3.2
+      strip-ansi:
+        specifier: ^6.0.0
+        version: 6.0.1
       stylelint:
         specifier: ^15.11.0
         version: 15.11.0(typescript@5.5.3)
@@ -189,6 +198,9 @@ importers:
       stylelint-scss:
         specifier: ^6.3.2
         version: 6.3.2(stylelint@15.11.0(typescript@5.5.3))
+      terminal-link:
+        specifier: ^2.1.1
+        version: 2.1.1
       text-table:
         specifier: ^0.2.0
         version: 0.2.0
@@ -226,6 +238,9 @@ importers:
       '@types/stylelint':
         specifier: ^14.0.0
         version: 14.0.0(typescript@5.5.3)
+      '@types/text-table':
+        specifier: ^0.2.5
+        version: 0.2.5
       '@zhongjiayao/commitlint-config-encode':
         specifier: ^1.1.0
         version: 1.1.0
@@ -1667,6 +1682,9 @@ packages:
   '@types/stylelint@14.0.0':
     resolution: {integrity: sha512-0eFbWemetFjcDiBBKne7QJBfdicxdmdJ1qGMye3sDYe7mCh8EfuovjkUTg6zXvYhJcWBhIIQnC6bmFYjpYetgQ==}
     deprecated: This is a stub types definition. stylelint provides its own type definitions, so you do not need this installed.
+
+  '@types/text-table@0.2.5':
+    resolution: {integrity: sha512-hcZhlNvMkQG/k1vcZ6yHOl6WAYftQ2MLfTHcYRZ2xYZFD8tGVnE3qFV0lj1smQeDSR7/yY0PyuUalauf33bJeA==}
 
   '@types/through@0.0.33':
     resolution: {integrity: sha512-HsJ+z3QuETzP3cswwtzt2vEIiHBk/dCcHGhbmG5X3ecnwFD/lPrMpliGXxSCg03L9AhrdwA4Oz/qfspkDW+xGQ==}
@@ -5382,6 +5400,10 @@ packages:
     resolution: {integrity: sha512-MpUEN2OodtUzxvKQl72cUF7RQ5EiHsGvSsVG0ia9c5RbWGL2CI4C7EpPS8UTBIplnlzZiNuV56w+FuNxy3ty2Q==}
     engines: {node: '>=10'}
 
+  supports-hyperlinks@2.3.0:
+    resolution: {integrity: sha512-RpsAZlpWcDwOPQA22aCH4J0t7L8JmAvsCxfOSEwm7cQs3LshN36QaTkwd70DnBOXDWGssw2eUoc8CaRWT0XunA==}
+    engines: {node: '>=8'}
+
   supports-hyperlinks@3.0.0:
     resolution: {integrity: sha512-QBDPHyPQDRTy9ku4URNGY5Lah8PAaXs6tAAwp55sL5WCsSW7GIfdf6W5ixfziW+t7wh3GVvHyHHyQ1ESsoRvaA==}
     engines: {node: '>=14.18'}
@@ -5419,6 +5441,10 @@ packages:
   tempfile@5.0.0:
     resolution: {integrity: sha512-bX655WZI/F7EoTDw9JvQURqAXiPHi8o8+yFxPF2lWYyz1aHnmMRuXWqL6YB6GmeO0o4DIYWHLgGNi/X64T+X4Q==}
     engines: {node: '>=14.18'}
+
+  terminal-link@2.1.1:
+    resolution: {integrity: sha512-un0FmiRUQNr5PJqy9kP7c40F5BOfpGlYTrxonDChEZB7pzZxRNp/bt+ymiy9/npwXya9KH99nJ/GXFIiUkYGFQ==}
+    engines: {node: '>=8'}
 
   test-exclude@6.0.0:
     resolution: {integrity: sha512-cAGWPIyOHU6zlmg88jwm7VRyXnMN7iV68OGAbYDk/Mh/xC/pzVPlQtY6ngoIH/5/tciuhGfvESU8GrHrcxD56w==}
@@ -6995,7 +7021,7 @@ snapshots:
   '@lerna/child-process@7.4.2':
     dependencies:
       chalk: 4.1.2
-      execa: 5.0.0
+      execa: 5.1.1
       strong-log-transformer: 2.1.0
 
   '@lerna/create@7.4.2(encoding@0.1.13)(typescript@5.5.2)':
@@ -7504,6 +7530,8 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
       - typescript
+
+  '@types/text-table@0.2.5': {}
 
   '@types/through@0.0.33':
     dependencies:
@@ -12113,6 +12141,11 @@ snapshots:
     dependencies:
       has-flag: 4.0.0
 
+  supports-hyperlinks@2.3.0:
+    dependencies:
+      has-flag: 4.0.0
+      supports-color: 7.2.0
+
   supports-hyperlinks@3.0.0:
     dependencies:
       has-flag: 4.0.0
@@ -12156,6 +12189,11 @@ snapshots:
   tempfile@5.0.0:
     dependencies:
       temp-dir: 3.0.0
+
+  terminal-link@2.1.1:
+    dependencies:
+      ansi-escapes: 4.3.2
+      supports-hyperlinks: 2.3.0
 
   test-exclude@6.0.0:
     dependencies:

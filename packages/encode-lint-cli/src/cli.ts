@@ -14,6 +14,8 @@ import update from './actions/update'
 import { program } from 'commander'
 import log from './utils/log'
 import { execSync } from 'child_process'
+import { getAmendFiles, getCommitFiles } from './utils/git'
+import printReport from './utils/print-report'
 
 type OraKey = keyof Ora
 const cwd = process.cwd()
@@ -79,7 +81,7 @@ program
 
     // console.log('sdsdsd', cmd)
 
-    const { errorCount, warningCount, runErrors } = await scan({
+    const {results, errorCount, warningCount, runErrors } = await scan({
       cwd,
       fix: false,
       include: cmd.include || cwd,
@@ -97,13 +99,56 @@ program
     }
 
     checking[type]();
-    // if (results.length > 0) printReport(results, false);
+    if (results.length > 0) printReport(results, false);
 
     // 输出 lint 运行错误
     runErrors.forEach((e) => console.log(e));
 
 
   })
+
+  program
+  .command('commit-msg-scan')
+  .description('commit message 检查: git commit 时对 commit message 进行检查')
+  .action(() => {
+    const result = spawn.sync('commitlint', ['-E', 'HUSKY_GIT_PARAMS'], { stdio: 'inherit' });
+
+    if (result.status !== 0) {
+      process.exit(result.status);
+    }
+  });
+
+  program
+  .command('commit-file-scan')
+  .description('代码提交检查: git commit 时对提交代码进行规范问题扫描')
+  .option('-s, --strict', '严格模式，对 warn 和 error 问题都卡口，默认仅对 error 问题卡口')
+  .action(async (cmd) => {
+    await installDepsIfThereNo();
+
+
+    // git add 检查
+    const files = await getAmendFiles();
+    if (files) log.warn(`[${PKG_NAME}] changes not staged for commit: \n${files}\n`);
+
+    const checking = ora();
+    checking.start(`执行 ${PKG_NAME} 代码提交检查`);
+
+    const { results, errorCount, warningCount } = await scan({
+      cwd,
+      include: cwd,
+      quiet: !cmd.strict,
+      files: await getCommitFiles(),
+    });
+
+
+    if (errorCount > 0 || (cmd.strict && warningCount > 0)) {
+      checking.fail();
+      printReport(results, false);
+      process.exitCode = 1;
+    } else {
+      checking.succeed();
+    }
+  });
 
 
   program
@@ -117,7 +162,7 @@ program
     const checking = ora();
     checking.start(`执行 ${PKG_NAME} 代码修复`);
 
-     await scan({
+    const { results } =  await scan({
       cwd,
       fix: true,
       include: cmd.include || cwd,
@@ -125,7 +170,7 @@ program
     });
 
     checking.succeed();
-    // if (results.length > 0) printReport(results, true);
+    if (results.length > 0) printReport(results, true);
   });
 
 program
