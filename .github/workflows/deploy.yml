@@ -37,7 +37,7 @@ jobs:
     # node v20 运行
     strategy:
       matrix:
-        node-version: [20]
+        node-version: [18]
 
     steps:
       # 拉取代码
@@ -58,9 +58,9 @@ jobs:
       - uses: pnpm/action-setup@v2
         name: Install pnpm
         with:
-          version: 9.4.0
-          # version: 9
-          run_install: false
+          # version: latest
+          version: 9.2.0
+          run_install: true
 
         # 安装依赖
       - name: Install dependencies
