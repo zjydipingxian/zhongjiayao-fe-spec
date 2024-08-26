@@ -84,9 +84,6 @@ importers:
       '@typescript-eslint/parser':
         specifier: ^7.15.0
         version: 7.15.0(eslint@8.57.0)(typescript@5.5.3)
-      '@zhongjiayao/eslint-config-encode':
-        specifier: workspace:^
-        version: link:../eslint-config-encode
       '@zhongjiayao/markdownlint-config-encode':
         specifier: workspace:^
         version: link:../markdownlint-config-encode
@@ -150,6 +147,9 @@ importers:
       markdownlint-rule-helpers:
         specifier: ^0.25.0
         version: 0.25.0
+      null-eslint-config-encode:
+        specifier: workspace:^
+        version: link:../eslint-config-encode
       ora:
         specifier: ^5.1.0
         version: 5.1.0
