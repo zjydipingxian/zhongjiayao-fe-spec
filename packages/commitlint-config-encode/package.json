@@ -14,6 +14,7 @@
     "lib"
   ],
   "scripts": {
+    "clean": "rimraf node_modules",
     "test": "node ./__tests__/commitlint-config.test.js"
   },
   "config": {

@@ -21,6 +21,7 @@
     "url": "git+https://github.com/zjydipingxian/zhongjiayao-fe-spec.git"
   },
   "scripts": {
+    "clean": "rimraf node_modules",
     "lint": "eslint ./lib/",
     "test": "node ./__tests__/eslint-config.test.js"
   },

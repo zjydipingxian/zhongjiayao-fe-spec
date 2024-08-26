@@ -19,6 +19,7 @@
     "lint"
   ],
   "scripts": {
+    "clean": "rimraf node_modules",
     "test": "node ./__tests__/markdownlint-config.test.js"
   },
   "dependencies": {

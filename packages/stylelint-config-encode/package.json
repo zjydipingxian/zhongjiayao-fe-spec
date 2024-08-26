@@ -23,6 +23,7 @@
     "url": "git+https://github.com/zjydipingxian/zhongjiayao-fe-spec.git"
   },
   "scripts": {
+    "clean": "rimraf node_modules",
     "test": "jest"
   },
   "bugs": {

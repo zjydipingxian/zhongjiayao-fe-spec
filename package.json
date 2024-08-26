@@ -7,8 +7,8 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
-    "init": "pnpm install",
-    "clean": "lerna clean && rm -rf node_modules",
+    "all": "pnpm install",
+    "clean": "pnpm -r --filter=./packages/* run clean && rimraf node_modules",
     "test": "lerna run test",
     "docs:dev": "vitepress dev docs",
     "build": "vitepress build docs",
@@ -39,6 +39,7 @@
     "husky": "^8.0.3",
     "lerna": "^7.2.0",
     "markdownlint": "^0.34.0",
+    "rimraf": "^6.0.1",
     "vitepress": "^1.2.3"
   },
   "publishConfig": {
