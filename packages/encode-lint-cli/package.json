@@ -1,6 +1,6 @@
 {
   "name": "encode-lint-cli",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "> 前端编码规范工程化标准脚手架",
   "author": "'Null' <'7566349+zhongjiayao@user.noreply.gitee.com'>",
   "homepage": "https://github.com/zjydipingxian/zhongjiayao-fe-spec#readme",
@@ -52,7 +52,7 @@
     "@types/lodash": "^4.17.6",
     "@typescript-eslint/eslint-plugin": "^7.15.0",
     "@typescript-eslint/parser": "^7.15.0",
-    "@zhongjiayao/eslint-config-encode": "workspace:^",
+    "null-eslint-config-encode": "workspace:^",
     "@zhongjiayao/markdownlint-config-encode": "workspace:^",
     "@zhongjiayao/stylelint-config-encode": "workspace:^",
     "chalk": "^4.1.0",

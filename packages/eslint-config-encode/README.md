@@ -1,4 +1,4 @@
-# @zhongjiayao/eslint-config-encode
+# null-eslint-config-encode
 
 > JavaScript TypeScript Node 规范
 

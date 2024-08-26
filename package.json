@@ -14,7 +14,8 @@
     "build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "commit": "git-cz",
-    "commitlint": "commitlint --edit"
+    "commitlint": "commitlint --edit",
+    "pub": "pnpm -r --filter=./packages/*  publish --access=public"
   },
   "config": {
     "commitizen": {
