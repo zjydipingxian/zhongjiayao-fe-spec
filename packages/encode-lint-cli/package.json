@@ -7,6 +7,9 @@
   "license": "ISC",
   "bin": "./lib/cli.js",
   "main": "./lib/index.js",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "clean": "rimraf node_modules",
     "dev": "npm run copyfiles && tsc -w",

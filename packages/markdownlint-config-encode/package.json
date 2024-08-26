@@ -6,6 +6,9 @@
   "homepage": "",
   "license": "ISC",
   "main": "lib/markdownlint-config.json",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "directories": {
     "lib": "lib",
     "test": "__tests__"
