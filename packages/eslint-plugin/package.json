@@ -1,5 +1,5 @@
 {
-  "name": "@zhongjiayao/eslint-plugin",
+  "name": "null-eslint-plugin",
   "version": "1.0.0",
   "description": "自定义eslint插件",
   "author": "'Null' <'7566349+zhongjiayao@user.noreply.gitee.com'>",

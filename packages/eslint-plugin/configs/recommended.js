@@ -1,7 +1,7 @@
 module.exports = {
-  plugins: ['@zhongjiayao/eslint-plugin'],
+  plugins: ['null-eslint-plugin'],
   rules: {
-    '@zhongjiayao/eslint-plugin/no-http-url': 'warn',
-    '@zhongjiayao/eslint-plugin/no-secret-info': 'error',
+    'null-eslint-plugin/no-http-url': 'warn',
+    'null-eslint-plugin/no-secret-info': 'error',
   },
 }
