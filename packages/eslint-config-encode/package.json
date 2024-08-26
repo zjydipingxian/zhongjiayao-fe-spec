@@ -1,6 +1,6 @@
 {
   "name": "@zhongjiayao/eslint-config-encode",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "JavaScript TypeScript Node 规范",
   "keywords": [
     "encode",
@@ -21,7 +21,7 @@
     "url": "git+https://github.com/zjydipingxian/zhongjiayao-fe-spec.git"
   },
   "scripts": {
-    "lint": "eslint ./",
+    "lint": "eslint ./lib/",
     "test": "node ./__tests__/eslint-config.test.js"
   },
   "bugs": {

@@ -1,11 +1,5 @@
-# `eslint-config`
+# @zhongjiayao/eslint-config-encode
 
-> TODO: description
+> JavaScript TypeScript Node 规范
 
-## Usage
-
-```
-const eslintConfig = require('eslint-config');
-
-// TODO: DEMONSTRATE API
-```
+提供了多套配置文件以支持 `JavaScript`、`TypeScript`、`Vue`、 等多种项目类型。

@@ -33,6 +33,10 @@ export default defineConfig({
             text: 'stylelint-config-encode',
             link: '/npm/stylelint-config',
           },
+          {
+            text: 'eslint-config-encode',
+            link: '/npm/eslint-config',
+          },
         ],
       },
     ],
@@ -74,6 +78,10 @@ export default defineConfig({
           {
             text: 'stylelint-config',
             link: '/npm/stylelint-config',
+          },
+          {
+            text: 'eslint-config',
+            link: '/npm/eslint-config',
           },
         ],
       },
