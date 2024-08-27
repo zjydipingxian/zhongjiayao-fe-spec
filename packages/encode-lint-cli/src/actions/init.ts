@@ -19,8 +19,6 @@ const chooseEslintType = async () => {
     choices: PROJECT_TYPES,
   })
 
-  console.log('ssss', answer)
-
   return answer
 }
 
@@ -33,9 +31,6 @@ const chooseEnableMarkdownLint = async (): Promise<boolean> => {
     default: true,
   })
 
-  console.log('markdownlint', answer)
-
-
   return answer
 }
 
@@ -43,16 +38,11 @@ const chooseEnableMarkdownLint = async (): Promise<boolean> => {
  * 选择是否启用 stylelint
  * @param defaultValue
  */
-const chooseEnableStylelint = async (
-  defaultValue: boolean
-): Promise<boolean> => {
+const chooseEnableStylelint = async (defaultValue: boolean): Promise<boolean> => {
   const answer = await confirm({
     message: `Step ${++step}. 是否需要使用 stylelint（若没有样式文件则不需要）：`,
     default: defaultValue,
   })
-
-
-  console.log('stylelint', answer)
 
   return answer
 }
@@ -65,9 +55,6 @@ const chooseEnablePrettier = async (): Promise<boolean> => {
     message: `Step ${++step}. 是否需要使用 Prettier 格式化代码：`,
     default: true,
   })
-
-  console.log('prettier', answer)
-
 
   return answer
 }
@@ -84,12 +71,7 @@ export default async (options: InitOptions) => {
   const config: Record<string, any> = {}
   const pkgPath = path.resolve(cwd, 'package.json')
 
-  console.log('dddddddddd', pkgPath)
-
   let pkg: PKG = fs.readJSONSync(pkgPath)
-
-  console.log('pkgpkgpkg', pkg)
-
 
   // 版本检查
   if (!isTest && checkVersionUpdate) {
@@ -104,10 +86,7 @@ export default async (options: InitOptions) => {
   }
 
   // 初始化 `eslintType`
-  if (
-    options.eslintType &&
-    PROJECT_TYPES.find((choice) => choice.value === options.eslintType)
-  ) {
+  if (options.eslintType && PROJECT_TYPES.find((choice) => choice.value === options.eslintType)) {
     config.eslintType = options.eslintType
   } else {
     config.eslintType = await chooseEslintType()
@@ -117,9 +96,7 @@ export default async (options: InitOptions) => {
   if (typeof options.enableStylelint === 'boolean') {
     config.enableStylelint = options.enableStylelint
   } else {
-    config.enableStylelint = await chooseEnableStylelint(
-      !/node/.test(config.eslintType)
-    )
+    config.enableStylelint = await chooseEnableStylelint(!/node/.test(config.eslintType))
   }
 
   // 初始化 `enableMarkdownlint`
@@ -151,32 +128,32 @@ export default async (options: InitOptions) => {
   }
 
   // 更新 pkg.json
-  pkg = fs.readJSONSync(pkgPath);
+  pkg = fs.readJSONSync(pkgPath)
   // 在 `package.json` 中写入 `scripts`
   if (!pkg.scripts) {
-    pkg.scripts = {};
+    pkg.scripts = {}
   }
   if (!pkg.scripts[`${PKG_NAME}-scan`]) {
-    pkg.scripts[`${PKG_NAME}-scan`] = `${PKG_NAME} scan`;
+    pkg.scripts[`${PKG_NAME}-scan`] = `${PKG_NAME} scan`
   }
   if (!pkg.scripts[`${PKG_NAME}-fix`]) {
-    pkg.scripts[`${PKG_NAME}-fix`] = `${PKG_NAME} fix`;
+    pkg.scripts[`${PKG_NAME}-fix`] = `${PKG_NAME} fix`
   }
 
   // 配置 commit 卡点
-  log.info(`Step ${++step}. 配置 git commit 卡点`);
-  if (!pkg.husky) pkg.husky = {};
-  if (!pkg.husky.hooks) pkg.husky.hooks = {};
-  pkg.husky.hooks['pre-commit'] = `${PKG_NAME} commit-file-scan`;
-  pkg.husky.hooks['commit-msg'] = `${PKG_NAME} commit-msg-scan`;
-  fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2));
-  log.success(`Step ${step}. 配置 git commit 卡点成功 :D`);
+  log.info(`Step ${++step}. 配置 git commit 卡点`)
+  if (!pkg.husky) pkg.husky = {}
+  if (!pkg.husky.hooks) pkg.husky.hooks = {}
+  pkg.husky.hooks['pre-commit'] = `${PKG_NAME} commit-file-scan`
+  pkg.husky.hooks['commit-msg'] = `${PKG_NAME} commit-msg-scan`
+  fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2))
+  log.success(`Step ${step}. 配置 git commit 卡点成功 :D`)
 
-  log.info(`Step ${++step}. 写入配置文件`);
-  generateTemplate(cwd, config);
-  log.success(`Step ${step}. 写入配置文件成功 :D`);
+  log.info(`Step ${++step}. 写入配置文件`)
+  generateTemplate(cwd, config)
+  log.success(`Step ${step}. 写入配置文件成功 :D`)
 
   // 完成信息
-  const logs = [`${PKG_NAME} 初始化完成 :D`].join('\r\n');
-  log.success(logs);
+  const logs = [`${PKG_NAME} 初始化完成 :D`].join('\r\n')
+  log.success(logs)
 }
