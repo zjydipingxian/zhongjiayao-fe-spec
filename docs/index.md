@@ -6,6 +6,9 @@ hero:
   name: 'ZhongJiaYao'
   text: '前端编码规范工程化'
   tagline: 冲冲冲！！！
+  image:
+    src: /code.png
+    alt: VitePress
   actions:
     - theme: brand
       text: 立即进入

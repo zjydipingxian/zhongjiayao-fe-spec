@@ -18,6 +18,25 @@ export default defineConfig({
           { text: 'Typescript 编码规范', link: '/coding/typescript.md' },
         ],
       },
+
+      {
+        text: '工程规范',
+        items: [
+          {
+            text: 'Git 规范',
+            link: '/engineering/git',
+          },
+          {
+            text: '文档规范',
+            link: '/engineering/doc',
+          },
+          {
+            text: 'CHANGELOG 规范',
+            link: '/engineering/changelog',
+          },
+        ],
+      },
+
       {
         text: 'NPM包',
         items: [
@@ -36,6 +55,10 @@ export default defineConfig({
           {
             text: 'eslint-config-encode',
             link: '/npm/eslint-config',
+          },
+          {
+            text: 'eslint-plugin',
+            link: '/npm/eslint-plugin',
           },
         ],
       },
@@ -57,10 +80,28 @@ export default defineConfig({
             text: 'JavaScript 编码规范',
             link: '/coding/javascript',
           },
-          // {
-          //   text: 'Typescript 编码规范',
-          //   link: '/coding/typescript',
-          // },
+          {
+            text: 'Typescript 编码规范',
+            link: '/coding/typescript',
+          },
+        ],
+      },
+
+      {
+        text: '工程规范',
+        items: [
+          {
+            text: 'Git 规范',
+            link: '/engineering/git',
+          },
+          {
+            text: '文档规范',
+            link: '/engineering/doc',
+          },
+          {
+            text: 'CHANGELOG 规范',
+            link: '/engineering/changelog',
+          },
         ],
       },
 
@@ -83,29 +124,19 @@ export default defineConfig({
             text: 'eslint-config',
             link: '/npm/eslint-config',
           },
-        ],
-      },
-      {
-        text: '工程规范',
-        items: [
           {
-            text: 'Git 规范',
-            link: '/engineering/git',
-          },
-          {
-            text: '文档规范',
-            link: '/engineering/doc',
-          },
-          {
-            text: 'CHANGELOG 规范',
-            link: '/engineering/changelog',
+            text: 'eslint-plugin',
+            link: '/npm/eslint-plugin',
           },
         ],
       },
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
+      {
+        icon: 'github',
+        link: 'https://github.com/zjydipingxian/zhongjiayao-fe-spec',
+      },
     ],
   },
 })

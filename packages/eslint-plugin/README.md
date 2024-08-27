@@ -1,5 +1,7 @@
 # null-eslint-plugin
 
+> eslint 插件
+
 ## 安装
 
 除了本包，你需要同时安装 [ESlint](https://eslint.org/)
@@ -19,7 +21,7 @@ module.exports = {
   rules: {
     'null-eslint-plugin/no-secret-info': 'error',
   },
-};
+}
 ```
 
 ### 使用 presets
@@ -28,7 +30,7 @@ module.exports = {
 // .eslintrc.js
 module.exports = {
   extends: 'plugin:null-eslint-plugin/recommended',
-};
+}
 ```
 
 ## 支持的规则
