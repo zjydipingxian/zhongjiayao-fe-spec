@@ -41,7 +41,7 @@ const installDepsIfThereNo = async () => {
 program
   .version(PKG_VERSION)
   .description(
-    `${PKG_NAME} 是111111 前端编码规范工程化 的配套 Lint 工具，提供简单的 CLI 和 Node.js API，让项目能够一键接入、一键扫描、一键修复、一键升级，并为项目配置 git commit 卡点，降低项目实施规约的成本`,
+    `222${PKG_NAME}  前端编码规范工程化 的配套 Lint 工具，提供简单的 CLI 和 Node.js API，让项目能够一键接入、一键扫描、一键修复、一键升级，并为项目配置 git commit 卡点，降低项目实施规约的成本`,
   )
 
 program
@@ -72,6 +72,8 @@ program
     await installDepsIfThereNo()
     const checking = ora()
     checking.start(`执行 ${PKG_NAME} 代码检查`)
+
+    console.log('11111111111111111111')
 
     const { results, errorCount, warningCount, runErrors } = await scan({
       cwd,

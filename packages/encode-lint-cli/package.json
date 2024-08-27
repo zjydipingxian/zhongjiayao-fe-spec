@@ -1,6 +1,6 @@
 {
   "name": "encode-lint-cli",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "> 前端编码规范工程化标准脚手架",
   "author": "'Null' <'7566349+zhongjiayao@user.noreply.gitee.com'>",
   "homepage": "https://github.com/zjydipingxian/zhongjiayao-fe-spec#readme",
@@ -13,7 +13,7 @@
   "scripts": {
     "clean": "rimraf node_modules",
     "dev": "npm run copyfiles && tsc -w",
-    "build": "npm run copyfiles && tsc",
+    "build": "rimraf lib &&  npm run copyfiles && tsc",
     "copyfiles": "copyfiles -a -u 1 \"src/config/**\" lib",
     "test": "npm run build && jest"
   },
