@@ -6,8 +6,6 @@
 
 ## 编码风格
 
-![typescript style](./img//typescript.svg)
-
 - 【强制】重载的函数必须写在一起 [@typescript-eslint/adjacent-overload-signatures](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/adjacent-overload-signatures.md)
 
   自然相关的项组合在一起将提高代码可读性和组织性。
