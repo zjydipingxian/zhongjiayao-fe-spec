@@ -31,7 +31,7 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
   if (config.enableESLint !== false) {
     try {
       const eslintResults = await doESLint({ ...options, pkg, config })
-      console.log('🚀 ~ eslintResults:', eslintResults)
+      // console.log('🚀 ~ eslintResults:', eslintResults)
       results = results.concat(eslintResults)
     } catch (e) {
       runErrors.push(e as Error)
@@ -43,7 +43,6 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
     try {
       const stylelintResults = await doStylelint({ ...options, pkg, config })
       results = results.concat(stylelintResults)
-      console.log('🚀 ~ results:', results)
     } catch (e) {
       runErrors.push(e as Error)
     }

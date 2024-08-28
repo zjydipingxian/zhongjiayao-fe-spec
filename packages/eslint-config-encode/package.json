@@ -1,6 +1,6 @@
 {
   "name": "null-eslint-config-encode",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "JavaScript TypeScript Node 规范",
   "keywords": [
     "encode",
@@ -14,14 +14,14 @@
   "author": "'Null' <'7566349+zhongjiayao@user.noreply.gitee.com'>",
   "homepage": "https://github.com/zjydipingxian/zhongjiayao-fe-spec#readme",
   "license": "ISC",
-  "main": "lib/eslint-config.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zjydipingxian/zhongjiayao-fe-spec.git"
   },
   "scripts": {
     "clean": "rimraf node_modules",
-    "lint": "eslint ./lib/",
+    "lint": "eslint ./",
     "test": "node ./__tests__/eslint-config.test.js"
   },
   "bugs": {
