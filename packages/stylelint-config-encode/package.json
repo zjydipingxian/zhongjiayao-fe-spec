@@ -1,6 +1,6 @@
 {
   "name": "@zhongjiayao/stylelint-config-encode",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "> CSS规范",
   "author": "'Null' <'7566349+zhongjiayao@user.noreply.gitee.com'>",
   "homepage": "https://github.com/zjydipingxian/zhongjiayao-fe-spec#readme",
@@ -48,6 +48,5 @@
     "stylelint-config-vue": "^1.0.0",
     "stylelint-order": "^6.0.4",
     "stylelint-scss": "^6.3.2"
-    
   }
 }
