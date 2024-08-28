@@ -5,10 +5,7 @@ import prettier from 'prettier'
 import { Config, PKG, ScanOptions } from '../../types'
 import { PRETTIER_FILE_EXT, PRETTIER_IGNORE_PATTERN } from '../../utils/constants'
 
-export interface DoPrettierOptions extends ScanOptions {
-  pkg: PKG
-  config?: Config
-}
+export interface DoPrettierOptions extends ScanOptions {}
 export async function doPrettier(options: DoPrettierOptions) {
   let files: string[] = []
   if (options.files) {
