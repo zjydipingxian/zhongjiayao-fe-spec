@@ -18,18 +18,21 @@ export const init = async (options: IInitOptions) => {
 export const scan = async (options: ScanOptions) => {
   const checking = ora()
   checking.start(`执行 ${PKG_NAME} 代码检查`)
+  try {
+    const report = await scanAction(options)
+    const { results, errorCount, warningCount } = report
+    let type: OraKey = 'succeed'
+    if (errorCount > 0) {
+      type = 'fail'
+    } else if (warningCount > 0) {
+      type = 'warn'
+    }
 
-  const report = await scanAction(options)
-  const { results, errorCount, warningCount } = report
-  let type: OraKey = 'succeed'
-  if (errorCount > 0) {
-    type = 'fail'
-  } else if (warningCount > 0) {
-    type = 'warn'
+    checking[type]()
+    if (results.length > 0) printReport(results, false)
+
+    return report
+  } catch (error) {
+    console.log('🚀 ~ scan ~ error:', error)
   }
-
-  checking[type]()
-  if (results.length > 0) printReport(results, false)
-
-  return report
 }

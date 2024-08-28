@@ -5,6 +5,7 @@ commitlint
 commitlintrc
 conventionalcommits
 copyfiles
+lintignore
 lintrc
 optimizelegibility
 pinia

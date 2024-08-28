@@ -10,6 +10,11 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
+  "keywords": [
+    "encode",
+    "lint",
+    "cli"
+  ],
   "scripts": {
     "clean": "rimraf node_modules",
     "dev": "npm run copyfiles && tsc -w",

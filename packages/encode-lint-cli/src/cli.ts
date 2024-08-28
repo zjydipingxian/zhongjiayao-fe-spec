@@ -73,8 +73,6 @@ program
     const checking = ora()
     checking.start(`执行 ${PKG_NAME} 代码检查`)
 
-    console.log('222')
-
     const { results, errorCount, warningCount, runErrors } = await scan({
       cwd,
       fix: false,
@@ -90,8 +88,6 @@ program
     } else if (warningCount > 0) {
       type = 'warn'
     }
-
-    // console.log('🚀 ~ .action ~ runErrors:', runErrors)
 
     checking[type]()
     if (results.length > 0) printReport(results, false)

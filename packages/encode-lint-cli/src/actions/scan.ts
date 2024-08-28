@@ -31,9 +31,9 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
   if (config.enableESLint !== false) {
     try {
       const eslintResults = await doESLint({ ...options, pkg, config })
-      // console.log('🚀 ~ eslintResults:', eslintResults)
       results = results.concat(eslintResults)
     } catch (e) {
+      // console.log('🚀 ~ 111111111111111111e:', e)
       runErrors.push(e as Error)
     }
   }
