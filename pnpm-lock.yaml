@@ -87,6 +87,9 @@ importers:
       '@typescript-eslint/parser':
         specifier: ^7.15.0
         version: 7.15.0(eslint@8.57.0)(typescript@5.5.3)
+      '@zhongjiayao/commitlint-config-encode':
+        specifier: workspace:^
+        version: link:../commitlint-config-encode
       '@zhongjiayao/markdownlint-config-encode':
         specifier: workspace:^
         version: link:../markdownlint-config-encode
@@ -117,9 +120,6 @@ importers:
       eslint-config-egg:
         specifier: ^10.0.0
         version: 10.0.0(eslint-import-resolver-typescript@2.7.1(eslint-plugin-import@2.29.1)(eslint@8.57.0))(eslint@8.57.0)(typescript@5.5.3)
-      eslint-config-encode:
-        specifier: ^1.0.8
-        version: 1.0.8
       eslint-config-prettier:
         specifier: ^8.3.0
         version: 8.10.0(eslint@8.57.0)
@@ -268,9 +268,6 @@ importers:
       '@types/text-table':
         specifier: ^0.2.5
         version: 0.2.5
-      '@zhongjiayao/commitlint-config-encode':
-        specifier: workspace:^
-        version: link:../commitlint-config-encode
       copyfiles:
         specifier: ^2.4.1
         version: 2.4.1
@@ -3085,9 +3082,6 @@ packages:
   eslint-config-egg@10.0.0:
     resolution: {integrity: sha512-CA0hs3cxvp0HfjWvBuU4wK3Zrw6SyfSZl4WWfvoV8IbI30VsVUWXdETVfXpMVsadXkMiJ0U37X8tICNSBIyAIw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-
-  eslint-config-encode@1.0.8:
-    resolution: {integrity: sha512-2bl1ljL1azeq4MQPKHD8m/oo8Ly2oLr+g8i7F0le9f661JxQIblbw8pCNDacYvDVZ3/2K1OQPik/oiGvJ/0zPw==}
 
   eslint-config-prettier@8.10.0:
     resolution: {integrity: sha512-SM8AMJdeQqRYT9O9zguiruQZaN7+z+E4eAP9oiLNGKMtomwaB1E9dcgUD6ZAn/eQAb52USbvezbiljfZUhbJcg==}
@@ -9986,8 +9980,6 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
       - typescript
-
-  eslint-config-encode@1.0.8: {}
 
   eslint-config-prettier@8.10.0(eslint@8.57.0):
     dependencies:
