@@ -1,6 +1,6 @@
 {
   "name": "null-eslint-config-encode",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "JavaScript TypeScript Node 规范",
   "keywords": [
     "encode",
@@ -28,21 +28,23 @@
     "url": "https://github.com/zjydipingxian/zhongjiayao-fe-spec/issues"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.7",
-    "@babel/eslint-parser": "^7.24.7",
-    "@babel/preset-react": "^7.24.0",
-    "@typescript-eslint/eslint-plugin": "^7.15.0",
-    "@typescript-eslint/parser": "^7.15.0",
+   "@babel/core": "^7.16.0",
+    "@babel/eslint-parser": "^7.16.3",
+    "@babel/preset-react": "^7.16.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
     "eslint": "^8.7.0",
     "eslint-config-egg": "^10.0.0",
     "eslint-import-resolver-typescript": "^2.5.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-vue": "^9.26.0",
+    "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-jsx-plus": "^0.1.0",
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "vue-eslint-parser": "^9.4.3",
-    "typescript": "^5.5.3"
+    "eslint-plugin-vue": "^7.3.0",
+    "lodash": "^4.17.21",
+    "mocha": "^8.2.1",
+    "typescript": "^5.5.3",
+    "vue-eslint-parser": "^7.3.0"
   }
 }
