@@ -76,11 +76,7 @@ module.exports = {
      * @extend
      */
     'brace-style': 'off',
-    '@typescript-eslint/brace-style': [
-      'error',
-      '1tbs',
-      { allowSingleLine: true },
-    ],
+    '@typescript-eslint/brace-style': ['error', '1tbs', { allowSingleLine: true }],
 
     /**
      * 【推荐】类的属性如果是字面量，则必须是只读属性而不能用 getter
@@ -94,10 +90,7 @@ module.exports = {
      * @extend
      */
     'comma-spacing': 'off',
-    '@typescript-eslint/comma-spacing': [
-      'error',
-      { before: false, after: true },
-    ],
+    '@typescript-eslint/comma-spacing': ['error', { before: false, after: true }],
 
     /**
      * 【强制】类型断言必须使用 as Type 而非 <T>，对象字面量禁止类型断言（断言成 any 除外）
@@ -143,10 +136,7 @@ module.exports = {
      * 【推荐】设置类的成员的可访问性，public 可省略
      * @link https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-member-accessibility.md
      */
-    '@typescript-eslint/explicit-member-accessibility': [
-      'warn',
-      { accessibility: 'no-public' },
-    ],
+    '@typescript-eslint/explicit-member-accessibility': ['warn', { accessibility: 'no-public' }],
 
     /**
      * 【关闭】导出的函数或类中的 public 方法必须定义输入输出参数的类型
@@ -573,10 +563,7 @@ module.exports = {
      * @extend
      */
     'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': [
-      'error',
-      { vars: 'all', args: 'after-used', ignoreRestSiblings: true },
-    ],
+    '@typescript-eslint/no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
 
     /**
      * 【关闭】禁止已定义的变量未使用
@@ -588,10 +575,7 @@ module.exports = {
      * @extend
      */
     'no-use-before-define': 'off',
-    '@typescript-eslint/no-use-before-define': [
-      'error',
-      { functions: false, classes: false, variables: false },
-    ],
+    '@typescript-eslint/no-use-before-define': ['error', { functions: false, classes: false, variables: false }],
 
     /**
      * 【强制】禁止出现没必要的 constructor

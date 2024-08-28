@@ -10,10 +10,7 @@ module.exports = {
 
   settings: {
     // 排除掉以下这个文件夹 / 文件
-    'import/ignore': [
-      'node_modules',
-      '\\.(coffee|scss|css|less|hbs|svg|json)$',
-    ],
+    'import/ignore': ['node_modules', '\\.(coffee|scss|css|less|hbs|svg|json)$'],
   },
 
   rules: {
@@ -92,14 +89,7 @@ module.exports = {
     'import/order': [
       'off',
       {
-        groups: [
-          'builtin',
-          'external',
-          'internal',
-          'parent',
-          'sibling',
-          'index',
-        ],
+        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
         'newlines-between': 'never',
       },
     ],

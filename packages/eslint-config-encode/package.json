@@ -30,11 +30,18 @@
   "devDependencies": {
     "@babel/core": "^7.24.7",
     "@babel/eslint-parser": "^7.24.7",
+    "@babel/preset-react": "^7.24.0",
     "@typescript-eslint/eslint-plugin": "^7.15.0",
     "@typescript-eslint/parser": "^7.15.0",
     "eslint": "^8.57.0",
+    "eslint-config-egg": "^10.0.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-vue": "^9.26.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-jsx-plus": "^0.1.0",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "vue-eslint-parser": "^9.4.3"
   }
 }

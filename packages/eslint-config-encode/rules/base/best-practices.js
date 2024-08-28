@@ -255,10 +255,7 @@ module.exports = {
     'no-void': 'error',
 
     // 禁止在注释中使用特定的警告术语
-    'no-warning-comments': [
-      'off',
-      { terms: ['todo', 'fixme'], location: 'start' },
-    ],
+    'no-warning-comments': ['off', { terms: ['todo', 'fixme'], location: 'start' }],
 
     // 禁止使用 with
     'no-with': 'error',

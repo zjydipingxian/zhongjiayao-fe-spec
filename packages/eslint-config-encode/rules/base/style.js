@@ -153,11 +153,7 @@ module.exports = {
     'linebreak-style': 'off',
 
     // 类成员之间保留一个空行
-    'lines-between-class-members': [
-      'off',
-      'always',
-      { exceptAfterSingleLine: false },
-    ],
+    'lines-between-class-members': ['off', 'always', { exceptAfterSingleLine: false }],
 
     // 要求在注释周围有空行
     'lines-around-comment': 'off',
@@ -228,11 +224,7 @@ module.exports = {
         newIsCap: true,
         newIsCapExceptions: [],
         capIsNew: false,
-        capIsNewExceptions: [
-          'Immutable.Map',
-          'Immutable.Set',
-          'Immutable.List',
-        ],
+        capIsNewExceptions: ['Immutable.Map', 'Immutable.Set', 'Immutable.List'],
       },
     ],
 
@@ -358,10 +350,7 @@ module.exports = {
     'operator-linebreak': 'off',
 
     // 块的开始和结束不能是空行
-    'padded-blocks': [
-      'warn',
-      { blocks: 'never', classes: 'never', switches: 'never' },
-    ],
+    'padded-blocks': ['warn', { blocks: 'never', classes: 'never', switches: 'never' }],
 
     // 要求或禁止在语句间填充空行
     'padding-line-between-statements': 'off',
@@ -370,11 +359,7 @@ module.exports = {
     'prefer-object-spread': 'off',
 
     // 对象字面量的属性名不要用引号包裹，除非包含特殊字符
-    'quote-props': [
-      'error',
-      'as-needed',
-      { keywords: false, unnecessary: true, numbers: false },
-    ],
+    'quote-props': ['error', 'as-needed', { keywords: false, unnecessary: true, numbers: false }],
 
     // 字符串优先使用单引号
     quotes: ['error', 'single', { avoidEscape: true }],

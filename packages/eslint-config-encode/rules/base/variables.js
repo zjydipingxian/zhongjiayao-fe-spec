@@ -40,15 +40,9 @@ module.exports = {
     'no-undefined': 'off',
 
     // 声明的变量必须被使用
-    'no-unused-vars': [
-      'error',
-      { vars: 'all', args: 'after-used', ignoreRestSiblings: true },
-    ],
+    'no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
 
     // 不要在声明前就使用变量
-    'no-use-before-define': [
-      'error',
-      { functions: false, classes: false, variables: false },
-    ],
+    'no-use-before-define': ['error', { functions: false, classes: false, variables: false }],
   },
 }
