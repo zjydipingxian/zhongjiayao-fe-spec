@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['./packages/eslint-config-encode/index.js', './packages/eslint-config-encode/vue.js'],
+  extends: ['./packages/rules-eslint-config/index.js', './packages/rules-eslint-config/vue.js'],
 }

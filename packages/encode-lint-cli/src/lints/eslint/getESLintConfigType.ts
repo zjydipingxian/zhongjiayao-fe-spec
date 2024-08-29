@@ -23,5 +23,5 @@ export function getESLintConfigType(cwd: string, pkg: PKG): string {
     dsl = 'rax'
   }
 
-  return 'null-eslint-config-encode/' + `${language}/${dsl}`.replace(/\/$/, '/index').replace(/^\//, '')
+  return 'rules-eslint-config/' + `${language}/${dsl}`.replace(/\/$/, '/index').replace(/^\//, '')
 }

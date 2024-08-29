@@ -1,4 +1,4 @@
-# null-eslint-config-encode
+# rules-eslint-config
 
 ## 3.0.0
 
@@ -10,7 +10,7 @@
 
 ### Minor Changes
 
-- 更新ESLint配置和支持包至null-eslint-config-encode
+- 更新 ESLint 配置和支持包至 null-rules-eslint-config
 
 ## 2.0.0
 
