@@ -3,7 +3,7 @@ import path from 'path'
 
 import type { Config, PKG, ScanOptions, ScanReport, ScanResult } from '../types'
 import { PKG_NAME } from '../utils/constants'
-import { doPrettier, doStylelint, doMarkdownlint, doESLint } from '../lints/index'
+import { doPrettier, doStylelint, doMarkdownlint, doESLint } from '../lints'
 
 export default async (options: ScanOptions): Promise<ScanReport> => {
   const { cwd, fix, outputReport, config: scanConfig } = options

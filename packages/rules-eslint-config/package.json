@@ -1,14 +1,20 @@
 {
   "name": "rules-eslint-config",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "JavaScript TypeScript Node 规范",
-  "main": "./index.js",
+  "main": "index.js",
   "keywords": [
     "encode",
     "javaScript",
     "typescript",
     "lint"
   ],
+  "scripts": {
+    "clean": "rimraf node_modules",
+    "lint": "eslint ./",
+    "test": "mocha ./__tests__/*.test.js --timeout 5000",
+    "print-config": "eslint --print-config ./index.js > ./print-config.json"
+  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -19,16 +25,11 @@
     "type": "git",
     "url": "git+https://github.com/zjydipingxian/zhongjiayao-fe-spec.git"
   },
-  "scripts": {
-    "clean": "rimraf node_modules",
-    "lint": "eslint ./",
-    "test": "node ./__tests__/eslint-config.test.js"
-  },
   "bugs": {
     "url": "https://github.com/zjydipingxian/zhongjiayao-fe-spec/issues"
   },
   "devDependencies": {
-   "@babel/core": "^7.16.0",
+    "@babel/core": "^7.16.0",
     "@babel/eslint-parser": "^7.16.3",
     "@babel/preset-react": "^7.16.0",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
