@@ -1,5 +1,19 @@
 # encode-lint-cli
 
+## 4.0.0
+
+### Major Changes
+
+- 批量更新
+
+### Patch Changes
+
+- Updated dependencies
+  - @zhongjiayao/commitlint-config-encode@4.0.0
+  - @zhongjiayao/markdownlint-config-encode@4.0.0
+  - rules-eslint-config@4.0.0
+  - @zhongjiayao/stylelint-config-encode@4.0.0
+
 ## 3.0.0
 
 ### Major Changes

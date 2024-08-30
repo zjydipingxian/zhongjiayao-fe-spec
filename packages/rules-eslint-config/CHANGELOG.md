@@ -1,5 +1,11 @@
 # rules-eslint-config
 
+## 4.0.0
+
+### Major Changes
+
+- 批量更新
+
 ## 3.0.0
 
 ### Major Changes
