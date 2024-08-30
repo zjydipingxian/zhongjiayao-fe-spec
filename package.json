@@ -39,7 +39,6 @@
     "cspell": "^8.9.1",
     "cz-git": "^1.9.3",
     "husky": "^8.0.3",
-    "lerna": "^7.2.0",
     "markdownlint": "^0.34.0",
     "rimraf": "^6.0.1",
     "vitepress": "^1.2.3"
