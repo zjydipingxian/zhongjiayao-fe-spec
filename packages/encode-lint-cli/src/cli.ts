@@ -29,9 +29,7 @@ const installDepsIfThereNo = async () => {
     ...glob.sync('.stylelintrc?(.@(js|yaml|yml|json))', { cwd }),
     ...glob.sync('.markdownlint(.@(yaml|yml|json))', { cwd }),
   ]
-  console.log('🚀 ~ installDepsIfThereNo ~ lintConfigFiles:', lintConfigFiles)
   const nodeModulesPath = path.resolve(cwd, 'node_modules')
-  console.log('🚀 ~ installDepsIfThereNo ~ cwd:', cwd)
 
   if (!fs.existsSync(nodeModulesPath) && lintConfigFiles.length > 0) {
     const npm = await npmType

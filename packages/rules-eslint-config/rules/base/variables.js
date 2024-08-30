@@ -25,7 +25,7 @@ module.exports = {
 
     // 禁止变量与外层作用域已存在的变量同名
     // @unessential
-    'no-shadow': 'error',
+    'no-shadow': 'warn',
 
     // 禁止使用保留字命名变量
     'no-shadow-restricted-names': 'error',

@@ -51,7 +51,6 @@ export default (cwd: string, data: Record<string, any>, vscode?: boolean) => {
       markdownLintIgnores: MARKDOWN_LINT_IGNORE_PATTERN,
       ...data,
     })
-    console.log('🚀 ~ content:', content)
 
     // 合并 vscode config
     if (/^_vscode/.test(name)) {
