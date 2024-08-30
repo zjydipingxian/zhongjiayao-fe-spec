@@ -15,9 +15,6 @@
     "test": "mocha ./__tests__/*.test.js --timeout 5000",
     "print-config": "eslint --print-config ./index.js > ./print-config.json"
   },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
   "author": "'Null' <'7566349+zhongjiayao@user.noreply.gitee.com'>",
   "homepage": "https://github.com/zjydipingxian/zhongjiayao-fe-spec#readme",
   "license": "ISC",

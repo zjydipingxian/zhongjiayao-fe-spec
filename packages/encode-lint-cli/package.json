@@ -7,9 +7,6 @@
   "license": "ISC",
   "bin": "./lib/cli.js",
   "main": "./lib/index.js",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
   "keywords": [
     "encode",
     "lint",
