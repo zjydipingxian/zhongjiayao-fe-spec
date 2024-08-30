@@ -8,5 +8,3 @@ module.exports = {
   ].map(require.resolve),
   root: true,
 }
-
-// [xxxxxx/es5]  用法

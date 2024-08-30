@@ -33,7 +33,7 @@ module.exports = {
     'no-confusing-arrow': 'error',
 
     // 禁止修改 const 声明的变量
-    'no-const-assign': 'off',
+    'no-const-assign': 'error',
 
     // 避免重复的类成员命名
     'no-dupe-class-members': 'error',
@@ -75,7 +75,7 @@ module.exports = {
 
     // 使用 const 或 let 声明变量，不要使用 var
     // @unessential
-    'no-var': 'warn',
+    'no-var': 'error',
 
     // 使用对象属性和方法的简写语法
     // @unessential
@@ -100,13 +100,13 @@ module.exports = {
 
     // 优先使用 const，只有当变量会被重新赋值时才使用 let
     // @unessential
-    // 'prefer-const': [
-    //   'error',
-    //   {
-    //     destructuring: 'any',
-    //     ignoreReadBeforeAssign: true,
-    //   },
-    // ],
+    'prefer-const': [
+      'error',
+      {
+        destructuring: 'any',
+        ignoreReadBeforeAssign: true,
+      },
+    ],
 
     // 使用对象和数组的解构
     'prefer-destructuring': [

@@ -23,7 +23,6 @@ export async function doESLint(options: DoESLintOptions) {
   }
 
   const eslint = new ESLint(getESLintConfig(options, options.pkg, options.config as Config))
-
   const reports = await eslint.lintFiles(files)
   if (options.fix) {
     await ESLint.outputFixes(reports)

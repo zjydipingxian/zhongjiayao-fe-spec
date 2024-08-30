@@ -1,12 +1,13 @@
 {
   "name": "eslint-rules-config",
-  "version": "4.0.0",
-  "description": "JavaScript TypeScript Node 规范",
+  "version": "4.0.1",
   "main": "index.js",
+  "description": "JavaScript TypeScript Node 规范",
   "keywords": [
     "encode",
     "javaScript",
     "typescript",
+    "node",
     "lint"
   ],
   "scripts": {

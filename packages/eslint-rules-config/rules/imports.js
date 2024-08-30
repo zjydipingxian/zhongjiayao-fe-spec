@@ -7,12 +7,9 @@
 
 module.exports = {
   plugins: ['import'],
-
   settings: {
-    // 排除掉以下这个文件夹 / 文件
     'import/ignore': ['node_modules', '\\.(coffee|scss|css|less|hbs|svg|json)$'],
   },
-
   rules: {
     /**
      * Static analysis

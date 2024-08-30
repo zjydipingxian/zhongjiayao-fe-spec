@@ -367,7 +367,7 @@ module.exports = {
     // 使用 JSDoc 注释
     'require-jsdoc': 'off',
 
-    // 使用分号 不使用
+    // 使用分号
     // @unessential
     semi: ['error', 'never'],
 

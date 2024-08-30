@@ -11,17 +11,8 @@ module.exports = {
     // eslint-disable，eslint-enable，eslint-disable-line，eslint-disable-next-line
     'vue/comment-directive': 'error',
 
-    // 本条是对JS规约 no-unused-vars 的补充，防止变量被错误地标记为未使用
+    // 本条是对JS规范 no-unused-vars 的补充，防止变量被错误地标记为未使用
     'vue/jsx-uses-vars': 'error',
-
-    //
-    'vue/attribute-hyphenation': [
-      'error',
-      'always',
-      {
-        ignore: [],
-      },
-    ],
 
     // 组件的 data 必须是一个函数
     'vue/no-shared-component-data': 'error',
@@ -79,7 +70,7 @@ module.exports = {
     'vue/require-component-is': 'warn',
 
     // render 函数必须有返回值
-    'vue/require-render-return': 'warn',
+    'vue/require-render-return': 'error',
 
     // 计算属性必须有返回值
     'vue/return-in-computed-property': 'error',
