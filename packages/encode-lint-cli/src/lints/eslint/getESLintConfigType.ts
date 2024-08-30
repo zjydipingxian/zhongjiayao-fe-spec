@@ -3,9 +3,7 @@ import type { PKG } from '../../types.ts'
 
 export function getESLintConfigType(cwd: string, pkg: PKG): string {
   const tsFiles = glob.sync('./!(node_modules)/**/*.@(ts|tsx)', { cwd })
-  console.log('🚀 ~ getESLintConfigType ~ tsFiles:', tsFiles)
   const reactFiles = glob.sync('./!(node_modules)/**/*.@(jsx|tsx)', { cwd })
-  console.log('🚀 ~ getESLintConfigType ~ reactFiles:', reactFiles)
   const vueFiles = glob.sync('./!(node_modules)/**/*.vue', { cwd })
   console.log('🚀 ~ getESLintConfigType ~ vueFiles:', vueFiles)
   const dependencies = Object.keys(pkg.dependencies || {})
@@ -22,6 +20,10 @@ export function getESLintConfigType(cwd: string, pkg: PKG): string {
   } else if (dependencies.some((name) => /^rax(-|$)/.test(name))) {
     dsl = 'rax'
   }
+  console.log(
+    '🚀 ~ getESLintConfigType ~ dsl:',
+    'eslint-rules-config/' + `${language}/${dsl}`.replace(/\/$/, '/index').replace(/^\//, ''),
+  )
 
-  return 'rules-eslint-config/' + `${language}/${dsl}`.replace(/\/$/, '/index').replace(/^\//, '')
+  return 'eslint-rules-config/' + `${language}/${dsl}`.replace(/\/$/, '/index').replace(/^\//, '')
 }

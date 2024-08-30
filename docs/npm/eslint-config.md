@@ -1,10 +1,10 @@
-# rules-eslint-config
+# eslint-rules-config
 
 > JavaScript TypeScript 规范
 
 提供了多套配置文件以支持 `JavaScript`、`TypeScript`、`Vue`、 等多种项目类型。
 
-## JavaScript 项目 - rules-eslint-config
+## JavaScript 项目 - eslint-rules-config
 
 针对未使用 `React` 或 `Vue` 的原生 `JavaScript` 项目，使用 `ESLint` 原生规则和
 [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import) 规则，使用
@@ -19,18 +19,18 @@
 ### 安装
 
 ```shell
-npm i -D rules-eslint-config @babel/core @babel/eslint-parser eslint-plugin-import
+npm i -D eslint-rules-config @babel/core @babel/eslint-parser eslint-plugin-import
 ```
 
 ### 配置
 
 ```json
 {
-  "extends": ["rules-eslint-config"]
+  "extends": ["eslint-rules-config"]
 }
 ```
 
-## JavaScript + Vue 项目 - rules-eslint-config/vue
+## JavaScript + Vue 项目 - eslint-rules-config/vue
 
 针对 `JS Vue` 的项目，继承了默认配置，并启用了 [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue) 插件的规则，使
 用 [vue-eslint-parser](https://www.npmjs.com/package/vue-eslint-parser) 作为 parser。
@@ -46,18 +46,18 @@ npm i -D rules-eslint-config @babel/core @babel/eslint-parser eslint-plugin-impo
 ### 安装
 
 ```shell
-npm i -D rules-eslint-config @babel/core @babel/eslint-parser eslint-plugin-import vue-eslint-parser eslint-plugin-vue
+npm i -D eslint-rules-config @babel/core @babel/eslint-parser eslint-plugin-import vue-eslint-parser eslint-plugin-vue
 ```
 
 ### 配置
 
 ```json
 {
-  "extends": ["rules-eslint-config/vue"]
+  "extends": ["eslint-rules-config/vue"]
 }
 ```
 
-## TypeScript 项目 - rules-eslint-config/typescript
+## TypeScript 项目 - eslint-rules-config/typescript
 
 针对未使用 `React` 或 `Vue` 的 `TypeScript` 项目，继承了默认配置，并启用了
 [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin) 插件
@@ -74,14 +74,14 @@ parser。
 ### 安装
 
 ```shell
-npm i -D rules-eslint-config @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-import-resolver-typescript
+npm i -D eslint-rules-config @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-import-resolver-typescript
 ```
 
 ### 配置
 
 ```json
 {
-  "extends": ["rules-eslint-config/typescript"]
+  "extends": ["eslint-rules-config/typescript"]
 }
 ```
 
@@ -91,14 +91,14 @@ npm i -D rules-eslint-config @typescript-eslint/parser @typescript-eslint/eslint
 
 ```json
 {
-  "extends": "rules-eslint-config/typescript",
+  "extends": "eslint-rules-config/typescript",
   "parserOptions": {
     "project": "./tsconfig.eslint.json"
   }
 }
 ```
 
-## TypeScript + Vue 项目 - rules-eslint-config/typescript/vue
+## TypeScript + Vue 项目 - eslint-rules-config/typescript/vue
 
 针对 `TS Vue` 项目，继承了 `JS Vue` 的配置，并启用了
 [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin) 插件
@@ -117,14 +117,14 @@ npm i -D rules-eslint-config @typescript-eslint/parser @typescript-eslint/eslint
 ### 安装
 
 ```shell
-npm i -D rules-eslint-config @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-import-resolver-typescript vue-eslint-parser eslint-plugin-vue
+npm i -D eslint-rules-config @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-import-resolver-typescript vue-eslint-parser eslint-plugin-vue
 ```
 
 ### 配置
 
 ```json
 {
-  "extends": ["rules-eslint-config/typescript/vue"]
+  "extends": ["eslint-rules-config/typescript/vue"]
 }
 ```
 
@@ -147,7 +147,7 @@ npm install --save-dev eslint-config-prettier eslint-plugin-prettier
 
 ```json
 {
-  "extends": ["rules-eslint-config/typescript/react", "prettier"]
+  "extends": ["eslint-rules-config/typescript/react", "prettier"]
 }
 ```
 
@@ -157,8 +157,8 @@ npm install --save-dev eslint-config-prettier eslint-plugin-prettier
 
 为了保证一致的编码风格，本包中大量风格相关的规则被设为了 `error` 级别，以引起开发者的足够重视。如果你觉得风格问题不足以是 `error`
 级别（有些用户根据 ESLint error 进行流程卡点），本包还提供了一套名为 'essential' 的配置文件，这套配置将所有风格问题降级为 `warn`
-级别，仅将必要问题报告为 `error`，引用方式为在相应配置的 `rules-eslint-config` 后面加上 `/essential`，如对 `JS React` 项目为
-`rules-eslint-config/essential/react`、对 `TS Vue` 项目为 `rules-eslint-config/essential/typescript/vue`
+级别，仅将必要问题报告为 `error`，引用方式为在相应配置的 `eslint-rules-config` 后面加上 `/essential`，如对 `JS React` 项目为
+`eslint-rules-config/essential/react`、对 `TS Vue` 项目为 `eslint-rules-config/essential/typescript/vue`
 
 ## 了解更多
 
@@ -166,7 +166,7 @@ npm install --save-dev eslint-config-prettier eslint-plugin-prettier
 - 了解如何为 IDE 配置 ESLint，可以参考官网的 [Integrations](http://eslint.org/docs/user-guide/integrations)。
 - 了解如何在继承本包的基础上对项目 ESLint 进行个性化配置，可参考官网的
   [Configuring ESLint](https://eslint.org/docs/user-guide/configuring)。下面简介下 ESLint 配置中的几个常用字段：
-  - `extends`: 继承一组规则集。`"extends": "rules-eslint-config",` 表示继承本包定义的规则配置。
+  - `extends`: 继承一组规则集。`"extends": "eslint-rules-config",` 表示继承本包定义的规则配置。
   - `rules`: 配置规则，这里定义的规则会覆盖 `extends` 的规则。如果觉得本包开启的某条规则过于严格，你可以暂时在这里将其关闭。
   - `parser`: 设置 ESLint 的解析器。ESLint 使用 espree 作为默认的解析器，可以通过这个参数指定其他的解析器。比如指定为
     [@babel/eslint-parser](https://npmjs.com/package/@babel/eslint-parser)，以解析 Babel 支持但 ESLint 默认解析器不支持的语法（本

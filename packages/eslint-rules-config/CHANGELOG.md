@@ -1,4 +1,4 @@
-# rules-eslint-config
+# eslint-rules-config
 
 ## 4.0.0
 
@@ -16,7 +16,7 @@
 
 ### Minor Changes
 
-- 更新 ESLint 配置和支持包至 null-rules-eslint-config
+- 更新 ESLint 配置和支持包至 null-eslint-rules-config
 
 ## 2.0.0
 

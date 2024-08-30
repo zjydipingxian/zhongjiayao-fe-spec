@@ -33,7 +33,7 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
       const eslintResults = await doESLint({ ...options, pkg, config })
       results = results.concat(eslintResults)
     } catch (e) {
-      // console.log('🚀 ~ 111111111111111111e:', e)
+      console.log('🚀 ~ 22222:', e)
       runErrors.push(e as Error)
     }
   }
