@@ -1,2 +1,11 @@
-module.exports = { extends: [ '<%= eslintType === 'index' ? require.resolve('eslint-rules-config') :
-require.resolve(`eslint-rules-config/${eslintType}`) %>', <%_ if (enablePrettier) { _%> 'prettier', <%_ } _%> ], };
+<% let configExtends = [
+  require.resolve(eslintType === 'index' ? "eslint-rules-config" : `eslint-rules-config/${eslintType}`)
+]; %>
+<% if (enablePrettier) { %>
+  <% configExtends.push('prettier'); %>
+<% } %>
+module.exports = {
+  extends: <%- JSON.stringify(configExtends) %>
+};
+
+
