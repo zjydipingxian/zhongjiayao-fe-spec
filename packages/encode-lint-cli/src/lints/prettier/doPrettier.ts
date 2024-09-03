@@ -1,9 +1,13 @@
+import os from 'os'
 import fg from 'fast-glob'
 import { readFile, writeFile } from 'fs-extra'
-import { extname, join } from 'path'
+import { extname, normalize, join } from 'path'
 import prettier from 'prettier'
-import { Config, PKG, ScanOptions } from '../../types'
+import { ScanOptions } from '../../types'
 import { PRETTIER_FILE_EXT, PRETTIER_IGNORE_PATTERN } from '../../utils/constants'
+
+// 获取操作系统类型
+const platform = os.platform()
 
 export interface DoPrettierOptions extends ScanOptions {}
 export async function doPrettier(options: DoPrettierOptions) {
@@ -13,13 +17,15 @@ export async function doPrettier(options: DoPrettierOptions) {
     files = options.files.filter((name) => PRETTIER_FILE_EXT.includes(extname(name)))
   } else {
     // 用`**/*.{js,jsx,ts,tsx}`这样的模式，匹配指定目录下所有的.js、.jsx、.ts和.tsx文件
-    const pattern = join(options.include, `**/*.{${PRETTIER_FILE_EXT.map((t) => t.replace(/^\./, '')).join(',')}}`)
+    const pattern = join(`**/*.{${PRETTIER_FILE_EXT.map((t) => t.replace(/^\./, '')).join(',')}}`)
+
     // 使用fast-glob库，根据构建的模式在指定的工作目录中搜索文件,  同时忽略掉prettier配置中指定的忽略文件模式
-    files = await fg(pattern, {
+    files = await fg(normalizePath(pattern, platform), {
       cwd: options.cwd,
       ignore: PRETTIER_IGNORE_PATTERN,
     })
   }
+
   await Promise.all(files.map(formatFile))
 }
 
@@ -32,4 +38,12 @@ async function formatFile(filepath: string) {
   const formatted = prettier.format(text, { ...options, filepath })
   // 将格式化后的内容写回原文件
   await writeFile(filepath, await formatted, 'utf8')
+}
+
+function normalizePath(pattern: string, platform: string): string {
+  let normalizedPattern = pattern
+  if (platform === 'win32') {
+    normalizedPattern = normalize(pattern).replace(/\\/g, '/')
+  }
+  return normalizedPattern
 }

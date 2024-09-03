@@ -71,13 +71,7 @@ export const ESLINT_IGNORE_PATTERN: string[] = [
 /**
  * stylelint 扫描文件扩展名
  */
-export const STYLELINT_FILE_EXT: string[] = [
-  '.css',
-  '.scss',
-  '.less',
-  '.acss',
-  'vue',
-]
+export const STYLELINT_FILE_EXT: string[] = ['.css', '.scss', '.less', '.acss', 'vue']
 
 /**
  * stylelint 扫描忽略的文件或文件目录
@@ -102,28 +96,18 @@ export const MARKDOWN_LINT_FILE_EXT: string[] = ['.md']
 /**
  * markdownLint 扫描忽略的文件或文件目录
  */
-export const MARKDOWN_LINT_IGNORE_PATTERN: string[] = [
-  'node_modules/',
-  'build/',
-  'dist/',
-  'coverage/',
-  'es/',
-  'lib/',
-]
+export const MARKDOWN_LINT_IGNORE_PATTERN: string[] = ['node_modules/', 'build/', 'dist/', 'coverage/', 'es/', 'lib/']
 
 /**
  * Prettier 扫描文件扩展名
  */
-export const PRETTIER_FILE_EXT = [
-  ...STYLELINT_FILE_EXT,
-  ...ESLINT_FILE_EXT,
-  ...MARKDOWN_LINT_FILE_EXT,
-]
+export const PRETTIER_FILE_EXT = [...STYLELINT_FILE_EXT, ...ESLINT_FILE_EXT, ...MARKDOWN_LINT_FILE_EXT]
 
 /**
  * Prettier 扫描忽略的文件或文件目录
  */
 export const PRETTIER_IGNORE_PATTERN: string[] = [
+  'node_modules',
   'node_modules/**/*',
   'build/**/*',
   'dist/**/*',

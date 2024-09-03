@@ -1,3 +1,2 @@
-module.exports = { extends: [ '<%= eslintType === 'index' ? 'eslint-rules-config' :
-`eslint-rules-config/${eslintType}` %>', <%_ if (enablePrettier) { _%> 'prettier', <%_ } _%> ],
-};
+module.exports = { extends: [ '<%= eslintType === 'index' ? require.resolve('eslint-rules-config') :
+require.resolve(`eslint-rules-config/${eslintType}`) %>', <%_ if (enablePrettier) { _%> 'prettier', <%_ } _%> ], };
