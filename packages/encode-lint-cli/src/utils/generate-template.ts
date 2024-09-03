@@ -53,6 +53,7 @@ export default (cwd: string, data: Record<string, any>, vscode?: boolean) => {
       stylelintIgnores: STYLELINT_IGNORE_PATTERN,
       markdownLintIgnores: MARKDOWN_LINT_IGNORE_PATTERN,
       ...data,
+      require,
     })
 
     // 合并 vscode config
