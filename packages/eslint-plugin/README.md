@@ -17,7 +17,7 @@ $ npm install null-eslint-plugin eslint --save-dev
 ```js
 // .eslintrc.js
 module.exports = {
-  plugin: ['eslint-rules-config'],
+  plugin: ['eslint-config-code'],
   rules: {
     'null-eslint-plugin/no-secret-info': 'error',
   },

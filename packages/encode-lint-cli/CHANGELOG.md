@@ -11,7 +11,7 @@
 - Updated dependencies
   - @zhongjiayao/commitlint-config-encode@4.0.0
   - @zhongjiayao/markdownlint-config-encode@4.0.0
-  - eslint-rules-config@4.0.0
+  - eslint-config-code@4.0.0
   - @zhongjiayao/stylelint-config-encode@4.0.0
 
 ## 3.0.0
@@ -23,7 +23,7 @@
 ### Patch Changes
 
 - Updated dependencies
-  - eslint-rules-config@3.0.0
+  - eslint-config-code@3.0.0
   - @zhongjiayao/markdownlint-config-encode@3.0.0
   - @zhongjiayao/stylelint-config-encode@3.0.0
 
@@ -31,12 +31,12 @@
 
 ### Minor Changes
 
-- 更新ESLint配置和支持包至null-eslint-rules-config
+- 更新 ESLint 配置和支持包至 null-eslint-config-code
 
 ### Patch Changes
 
 - Updated dependencies
-  - eslint-rules-config@2.1.0
+  - eslint-config-code@2.1.0
 
 ## 2.0.0
 
@@ -47,6 +47,6 @@
 ### Patch Changes
 
 - Updated dependencies
-  - eslint-rules-config@2.0.0
+  - eslint-config-code@2.0.0
   - @zhongjiayao/markdownlint-config-encode@2.0.0
   - @zhongjiayao/stylelint-config-encode@2.0.0

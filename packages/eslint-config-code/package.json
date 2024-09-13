@@ -1,5 +1,5 @@
 {
-  "name": "eslint-rules-config",
+  "name": "eslint-config-code",
   "version": "4.0.2",
   "main": "index.js",
   "description": "JavaScript TypeScript Node 规范",

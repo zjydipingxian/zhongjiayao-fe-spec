@@ -66,7 +66,7 @@
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-vue": "^7.3.0",
-    "eslint-rules-config": "workspace:^",
+    "eslint-config-code": "workspace:^",
     "execa": "^5.0.0",
     "fast-glob": "^3.2.11",
     "fs-extra": "^9.0.1",

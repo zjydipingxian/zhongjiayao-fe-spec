@@ -1,11 +1,3 @@
-<% let configExtends = [
-  require.resolve(eslintType === 'index' ? "eslint-rules-config" : `eslint-rules-config/${eslintType}`)
-]; %>
-<% if (enablePrettier) { %>
-  <% configExtends.push('prettier'); %>
-<% } %>
-module.exports = {
-  extends: <%- JSON.stringify(configExtends) %>
-};
-
-
+<% let configExtends = [ require.resolve(eslintType === 'index' ? "eslint-config-code" : `eslint-config-code/${eslintType}`) ]; %>
+<% if (enablePrettier) { %> <% configExtends.push('prettier'); %> <% } %> module.exports = { extends: <%-
+JSON.stringify(configExtends) %> };

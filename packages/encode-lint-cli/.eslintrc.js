@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['eslint-rules-config/typescript/node', 'prettier'],
+  extends: ['eslint-config-code/index.js', 'prettier'],
   rules: {
     '@typescript-eslint/no-require-imports': 0,
     'no-console': 0,

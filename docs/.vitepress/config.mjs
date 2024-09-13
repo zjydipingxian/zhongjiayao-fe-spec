@@ -53,7 +53,7 @@ export default defineConfig({
             link: '/npm/stylelint-config',
           },
           {
-            text: 'eslint-rules-config',
+            text: 'eslint-config-code',
             link: '/npm/eslint-config',
           },
           {
