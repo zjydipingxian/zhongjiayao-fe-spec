@@ -1,4 +1,4 @@
-# `@zhongjiayao/markdownlint-config-encode`
+# `markdownlint-config-code`
 
 > markdownlint: 文档规范
 
@@ -9,5 +9,5 @@
 需要先行安装 [markdownlint](https://www.npmjs.com/package/markdownlint)：
 
 ```bash
-pnpm install @zhongjiayao/markdownlint-config-encode markdownlint --save-dev
+pnpm install markdownlint-config-code markdownlint --save-dev
 ```

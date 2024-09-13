@@ -1,12 +1,12 @@
 ---
-title: '@zhongjiayao/markdownlint-config-encode'
+title: 'markdownlint-config-code'
 tags:
   - markdownlint 编码规范
 author:
   name: ZhongJiaYao
 ---
 
-# @zhongjiayao/markdownlint-config-encode
+# markdownlint-config-code
 
 支持配套的 [markdownlint 可共享配置](https://www.npmjs.com/package/markdownlint#optionsconfig)。
 
@@ -17,11 +17,11 @@ author:
 :::code-group
 
 ```sh [安装 PNPM]
-pnpm install @zhongjiayao/commitlint-config-encode @commitlint/cli --save-dev
+pnpm install commitlint-config-code @commitlint/cli --save-dev
 ```
 
 ```sh [安装 NPM]
-npm install @zhongjiayao/commitlint-config-encode @commitlint/cli --save-dev
+npm install commitlint-config-code @commitlint/cli --save-dev
 ```
 
 :::

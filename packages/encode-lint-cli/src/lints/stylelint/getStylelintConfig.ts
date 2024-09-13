@@ -37,7 +37,7 @@ export function getStylelintConfig(opts: ScanOptions, pkg: PKG, config: Config):
     // 如果没有找到配置文件，且package.json中没有stylelint配置，则指定默认配置
     if (lintConfigFiles.length === 0 && !pkg.stylelint) {
       lintConfig.config = {
-        extends: '@zhongjiayao/stylelint-config-encode',
+        extends: 'stylelint-config-code',
       }
     }
 

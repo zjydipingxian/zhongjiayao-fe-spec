@@ -15,10 +15,10 @@
 ### Patch Changes
 
 - Updated dependencies
-  - @zhongjiayao/commitlint-config-encode@4.0.0
-  - @zhongjiayao/markdownlint-config-encode@4.0.0
+  - commitlint-config-code@4.0.0
+  - markdownlint-config-code@4.0.0
   - eslint-config-code@4.0.0
-  - @zhongjiayao/stylelint-config-encode@4.0.0
+  - stylelint-config-code@4.0.0
 
 ## 3.0.0
 
@@ -30,8 +30,8 @@
 
 - Updated dependencies
   - eslint-config-code@3.0.0
-  - @zhongjiayao/markdownlint-config-encode@3.0.0
-  - @zhongjiayao/stylelint-config-encode@3.0.0
+  - markdownlint-config-code@3.0.0
+  - stylelint-config-code@3.0.0
 
 ## 2.1.0
 
@@ -54,5 +54,5 @@
 
 - Updated dependencies
   - eslint-config-code@2.0.0
-  - @zhongjiayao/markdownlint-config-encode@2.0.0
-  - @zhongjiayao/stylelint-config-encode@2.0.0
+  - markdownlint-config-code@2.0.0
+  - stylelint-config-code@2.0.0

@@ -1,4 +1,4 @@
-# @zhongjiayao/stylelint-config-encode
+# markdownlint-config-code
 
 ## 4.0.0
 

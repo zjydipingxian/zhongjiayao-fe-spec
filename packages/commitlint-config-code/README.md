@@ -1,4 +1,4 @@
-# `@zhongjiayao/commitlint-config-encode`
+# `commitlint-config-code`
 
 > Git 提交规范
 
@@ -15,11 +15,11 @@
 :::code-group
 
 ```sh [安装 PNPM]
-pnpm install @zhongjiayao/commitlint-config-encode --save-dev
+pnpm install commitlint-config-code --save-dev
 ```
 
 ```sh [安装 npm]
-npm install @zhongjiayao/commitlint-config-encode --save-dev
+npm install commitlint-config-code --save-dev
 ```
 
 :::

@@ -1,4 +1,4 @@
-# @zhongjiayao/markdownlint-config-encode
+# commitlint-config-code
 
 ## 4.0.0
 

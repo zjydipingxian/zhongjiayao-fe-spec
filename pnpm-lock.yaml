@@ -45,7 +45,7 @@ importers:
         specifier: ^1.2.3
         version: 1.3.4(@algolia/client-search@4.24.0)(@types/node@22.5.4)(postcss@8.4.45)(search-insights@2.17.2)(typescript@4.9.5)
 
-  packages/commitlint-config-encode:
+  packages/commitlint-config-code:
     dependencies:
       cz-git:
         specifier: ^1.9.3
@@ -78,15 +78,6 @@ importers:
       '@typescript-eslint/parser':
         specifier: ^5.0.0
         version: 5.62.0(eslint@8.7.0)(typescript@4.9.5)
-      '@zhongjiayao/commitlint-config-encode':
-        specifier: workspace:^
-        version: link:../commitlint-config-encode
-      '@zhongjiayao/markdownlint-config-encode':
-        specifier: workspace:^
-        version: link:../markdownlint-config-encode
-      '@zhongjiayao/stylelint-config-encode':
-        specifier: workspace:^
-        version: link:../stylelint-config-encode
       chalk:
         specifier: ^4.1.0
         version: 4.1.2
@@ -96,6 +87,9 @@ importers:
       commander:
         specifier: ^12.1.0
         version: 12.1.0
+      commitlint-config-code:
+        specifier: workspace:^
+        version: link:../commitlint-config-code
       cross-spawn:
         specifier: ^7.0.3
         version: 7.0.3
@@ -107,7 +101,7 @@ importers:
         version: 8.7.0
       eslint-config-code:
         specifier: workspace:^
-        version: link:../eslint-rules-config
+        version: link:../eslint-config-code
       eslint-config-egg:
         specifier: ^10.0.0
         version: 10.0.0(eslint-import-resolver-typescript@2.7.1(eslint-plugin-import@2.30.0)(eslint@8.7.0))(eslint@8.7.0)(typescript@4.9.5)
@@ -159,6 +153,9 @@ importers:
       markdownlint:
         specifier: ^0.25.1
         version: 0.25.1
+      markdownlint-config-code:
+        specifier: workspace:^
+        version: link:../markdownlint-config-code
       markdownlint-rule-helpers:
         specifier: ^0.13.0
         version: 0.13.0
@@ -174,6 +171,9 @@ importers:
       stylelint:
         specifier: ^14.3.0
         version: 14.16.1
+      stylelint-config-code:
+        specifier: workspace:^
+        version: link:../stylelint-config-code
       stylelint-scss:
         specifier: ^4.1.0
         version: 4.7.0(stylelint@14.16.1)
@@ -239,23 +239,7 @@ importers:
         specifier: ^4.6.2
         version: 4.9.5
 
-  packages/eslint-plugin:
-    dependencies:
-      fs-extra:
-        specifier: 9.0.1
-        version: 9.0.1
-      require-all:
-        specifier: 3.0.0
-        version: 3.0.0
-    devDependencies:
-      eslint:
-        specifier: 8.7.0
-        version: 8.7.0
-      jest:
-        specifier: ^29.7.0
-        version: 29.7.0(@types/node@14.18.63)(ts-node@10.9.2(@types/node@14.18.63)(typescript@4.9.5))
-
-  packages/eslint-rules-config:
+  packages/eslint-config-code:
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -312,13 +296,29 @@ importers:
         specifier: ^7.3.0
         version: 7.11.0(eslint@8.7.0)
 
-  packages/markdownlint-config-encode:
+  packages/eslint-plugin:
+    dependencies:
+      fs-extra:
+        specifier: 9.0.1
+        version: 9.0.1
+      require-all:
+        specifier: 3.0.0
+        version: 3.0.0
+    devDependencies:
+      eslint:
+        specifier: 8.7.0
+        version: 8.7.0
+      jest:
+        specifier: ^29.7.0
+        version: 29.7.0(@types/node@14.18.63)(ts-node@10.9.2(@types/node@14.18.63)(typescript@4.9.5))
+
+  packages/markdownlint-config-code:
     dependencies:
       markdownlint:
         specifier: ^0.34.0
         version: 0.34.0
 
-  packages/stylelint-config-encode:
+  packages/stylelint-config-code:
     devDependencies:
       jest:
         specifier: ^29.7.0

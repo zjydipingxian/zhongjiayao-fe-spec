@@ -1,4 +1,4 @@
-# @zhongjiayao/commitlint-config-encode
+# stylelint-config-code
 
 ## 4.0.0
 
