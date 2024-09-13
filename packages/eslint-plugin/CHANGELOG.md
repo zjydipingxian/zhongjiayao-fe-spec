@@ -1,5 +1,11 @@
 # null-eslint-plugin
 
+## 5.0.0
+
+### Major Changes
+
+- version 更新
+
 ## 4.0.0
 
 ### Major Changes
