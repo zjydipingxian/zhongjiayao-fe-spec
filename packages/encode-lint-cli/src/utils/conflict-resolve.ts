@@ -56,11 +56,8 @@ export default async (cwd: string, rewriteConfig?: boolean) => {
   const willRemovePackage = dependencies.filter(
     (name) => packageNamesToRemove.includes(name) || packagePrefixesToRemove.some((prefix) => name.startsWith(prefix)),
   )
-  console.log('🚀 ~ willRemovePackage:', willRemovePackage)
   const uselessConfig = checkUselessConfig(cwd)
-  console.log('🚀 ~ uselessConfig:', uselessConfig)
   const reWriteConfig = checkReWriteConfig(cwd)
-  console.log('🚀 ~ reWriteConfig:', reWriteConfig)
   const willChangeCount = willRemovePackage.length + uselessConfig.length + reWriteConfig.length
 
   // 提示是否移除原配置
@@ -94,7 +91,6 @@ export default async (cwd: string, rewriteConfig?: boolean) => {
   }
 
   // 删除配置文件
-  console.log('🚀 ~ uselessConfig:', uselessConfig)
   for (const name of uselessConfig) {
     fs.removeSync(path.resolve(cwd, name))
   }
@@ -103,7 +99,6 @@ export default async (cwd: string, rewriteConfig?: boolean) => {
   delete pkg.eslintConfig
   delete pkg.eslintIgnore
   delete pkg.stylelint
-  console.log('🚀 ~ willRemovePackage:', willRemovePackage)
 
   for (const name of willRemovePackage) {
     delete (pkg.dependencies || {})[name]

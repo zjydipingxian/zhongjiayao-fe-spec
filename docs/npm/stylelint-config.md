@@ -41,7 +41,7 @@ npm install stylelint-config-code  stylelint stylelint-scss stylelint-config-sta
 
 ## 使用
 
-在 `..stylelintrc.js` 中继承本包:
+在 `.stylelintrc.js` 中继承本包:
 
 ```js
 // 如果要在 vue 中使用 scss，需要安装 stylelint-config-recommended-vue/scss

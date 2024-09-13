@@ -45,7 +45,6 @@ export default async (install = true) => {
     const npm = await npmType
     // 检查并获取最新版本号
     const latestVersion = await checkLatestVersion()
-    console.log('🚀 111~ latestVersion:', latestVersion)
     // 停止
     checking.stop()
 

@@ -1,3 +1,2 @@
-<% let configExtends = [ require.resolve(eslintType === 'index' ? "eslint-config-code" : `eslint-config-code/${eslintType}`) ]; %>
-<% if (enablePrettier) { %> <% configExtends.push('prettier'); %> <% } %> module.exports = { extends: <%-
-JSON.stringify(configExtends) %> };
+module.exports = { extends: [ '<%= eslintType === 'index' ? 'eslint-config-code' : `eslint-config-code/${eslintType}` %>', <%_ if
+(enablePrettier) { _%> 'prettier', <%_ } _%> ], };
