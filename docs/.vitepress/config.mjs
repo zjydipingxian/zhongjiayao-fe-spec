@@ -8,15 +8,14 @@ export default defineConfig({
   head: [
     [
       'script',
-      {},
+      {
+        charset: 'UTF-8',
+        id: 'LA_COLLECT',
+        src: '//sdk.51.la/js-sdk-pro.min.js',
+      },
       `
-      var _hmt = _hmt || [];
-      (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?9b7c78427f7c88d49875650f6ac97475";
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-      })();
+      LA.init({id:"3Jx5jPuPSYftx1ly",ck:"3Jx5jPuPSYftx1ly",autoTrack:true,hashMode:true})
+     
       `,
     ],
   ],
