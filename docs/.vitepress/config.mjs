@@ -13,6 +13,10 @@ export default defineConfig({
         id: 'LA_COLLECT',
         src: '//sdk.51.la/js-sdk-pro.min.js',
       },
+    ],
+    [
+      'script',
+      {},
       `
       LA.init({id:"3Jx5jPuPSYftx1ly",ck:"3Jx5jPuPSYftx1ly",autoTrack:true,hashMode:true})
      
