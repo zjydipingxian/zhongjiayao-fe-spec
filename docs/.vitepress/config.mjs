@@ -5,6 +5,21 @@ export default defineConfig({
   title: 'ZhongJiaYao',
   description: '前端工程化 简单版',
   base: '/zhongjiayao-fe-spec/',
+  head: [
+    [
+      'script',
+      {},
+      `
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?9b7c78427f7c88d49875650f6ac97475";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+      `,
+    ],
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
