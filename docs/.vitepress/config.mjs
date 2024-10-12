@@ -80,6 +80,16 @@ export default defineConfig({
           },
         ],
       },
+
+      {
+        text: '脚手架',
+        items: [
+          {
+            text: 'encode-lint-cli',
+            link: '/cli/encode-lint-cli',
+          },
+        ],
+      },
     ],
 
     sidebar: [
@@ -145,6 +155,16 @@ export default defineConfig({
           {
             text: 'eslint-plugin',
             link: '/npm/eslint-plugin',
+          },
+        ],
+      },
+
+      {
+        text: '脚手架',
+        items: [
+          {
+            text: 'encode-lint-cli',
+            link: '/cli/encode-lint-cli',
           },
         ],
       },
